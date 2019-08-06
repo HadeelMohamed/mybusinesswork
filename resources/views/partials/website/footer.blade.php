@@ -182,10 +182,11 @@
 <script src="{{asset('mybusinessnewwebsite/js/select2.full.min.js')}}" ></script>
 <!--flat picker library-->
 <script src="{{asset('mybusinessnewwebsite/js/flat-picker.js')}}" ></script>
-<!-- custome js file  -->
-<script src="{{asset('mybusinessnewwebsite/js/min.js')}}"></script>
+
 <!-- /my-business-project project Libraries -->
 <script src="{{asset('mybusinessnewwebsite/js/jquery.validate.js')}}"></script>
 <!-- /jquery validation-->
+<!-- custome js file  -->
+<script src="{{asset('mybusinessnewwebsite/js/min.js')}}"></script>
 </body>
 </html>

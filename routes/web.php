@@ -32,6 +32,7 @@ Route::group(
     Route::get('/comment', function () {
     return view('pages.website.MemberProducts.comment');
 });
+Route::any('/profile_setting', 'Website\\RegistrationController@return_view_profile_setting')->name('profile_setting');
 
   Route::get('/', 'Website\\PagesController@homePage')->name('home_page');
   Route::get('/Promotions','Website\\PagesController@LandingPage')->name('landingPage');
@@ -453,4 +454,15 @@ Route::post('/registermodal', 'Website\\RegistrationController@store')->name('re
 
 Route::post('/registermodal', 'Website\\RegistrationController@store')->name('registermodal');
 Route::post('/loginformodal', 'Website\\LoginController@authenticate')->name('loginformodal');
-                    
+/////reirect to profile setting
+Route::group(
+[
+  'prefix' => LaravelLocalization::setLocale(),
+  'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath','auth' ]
+],function()
+{
+
+
+
+Route::any('/profile_setting', 'Website\\RegistrationController@return_view_profile_setting')->name('profile_setting');
+                    });

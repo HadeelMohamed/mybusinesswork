@@ -15,7 +15,7 @@ class LoginController extends Controller
 
      public function authenticate(Request $request)
     {
-
+ 
     	$email	       = $request->emaillogin;
     	$password      = $request->passwordlogin;
     	$rememberToken = $request->remember;
@@ -45,12 +45,15 @@ class LoginController extends Controller
 			);
 			return response()->json($msg);
 		} else {
+
 			$msg = array(
 				'status'  => 'error',
 				'message' => 'Login Fail !'
 			);
 			return response()->json($msg);
 		}
+
+
     }
 
 }
