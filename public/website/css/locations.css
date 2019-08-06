@@ -1,0 +1,1159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="csrf-token" content="PgYN0DMl4TmqeEJn6Lzv9XcaVjn47ojEcbqpnqHo" />
+<meta name="google-site-verification" content="yMB0IghcLClVWm5GnkVY5i6LM0HCVc1gBGnA0QGAn-M" />
+<link rel="icon" href="https://mybusinessme.com/website/images/five.png" >
+<link rel="stylesheet" href="https://mybusinessme.com/website/css/bootstrap.min.css" >
+<link rel="stylesheet" type="text/css" href="https://mybusinessme.com/website/css/fontawesome-all.css">
+<link rel="stylesheet" href="https://mybusinessme.com/website/css/main.css">
+<!-- <link href="https://mybusinessme.com/website/css/square_menu.css" rel='stylesheet' type='text/css'> -->
+<link rel="stylesheet" href="https://mybusinessme.com/website/css/btn-effect.css">
+<link rel="stylesheet" href="https://mybusinessme.com/website/css/social.css">
+<link rel="stylesheet" href="https://mybusinessme.com/website/css/menu.css">
+<link href="https://mybusinessme.com/website/css/resCarousel.css" rel="stylesheet" type="text/css">
+<link href="https://mybusinessme.com/website/css/star-rating.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://mybusinessme.com/website/css/select.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://mybusinessme.com/website/css/share.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://mybusinessme.com/website/css/box-hover.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://mybusinessme.com/website/css/dashboard.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://mybusinessme.com/website/css/feature.css" rel='stylesheet' type='text/css'>
+<link href="https://mybusinessme.com/website/css/liMarquee.css" rel="stylesheet" type="text/css">
+<link href="https://mybusinessme.com/website/css/animate.css" rel="stylesheet">
+<link href="https://mybusinessme.com/website/css/rotator.css" rel="stylesheet">
+<link href="https://mybusinessme.com/website/css/slider-blog.css" rel="stylesheet">
+<link rel="stylesheet" href="https://mybusinessme.com/website/css/demo.css?ver=3.4.0">
+<link href="https://mybusinessme.com/website/css/jquery.dataTables.css" media="all" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="https://mybusinessme.com/website/css/zoom.css">
+<link rel="stylesheet" href="https://mybusinessme.com/website/css/push-menu.css">
+<link rel="stylesheet" href="https://mybusinessme.com/website/css/register.css">
+<link rel="stylesheet" href="https://mybusinessme.com/website/css/media.css">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-130187758-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-130187758-3');
+</script>
+
+
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1791708710974315'); 
+fbq('track', 'PageView');
+</script>
+<noscript>
+<img height="1" width="1" 
+src="https://www.facebook.com/tr?id=1791708710974315&ev=PageView
+&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async 
+src="https://www.googletagmanager.com/gtag/js?id=UA-139834049-1"></script>
+<script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+
+   gtag('config', 'UA-139834049-1');
+</script>
+
+
+<style>
+	
+header{
+	display: none;
+}
+
+</style> 
+<title>MyBussinessme</title>
+</head>
+
+  <body>
+<!-- <div class="loader-wrap">
+  <div class="pin"></div>
+  <div class="pulse"></div>
+</div> -->
+        <!--loader end-->
+
+<!-- <div id="ajaxLoader" style="display: none;">
+    <i></i>
+    <i></i>
+    <i></i>
+</div>     -->    
+        <!-- Main  -->
+
+  <!--...........................menu...................-->
+  
+
+
+<div class="small-items">
+
+    
+      
+    <ul class="header-social float-right">
+        <li><a href="https://www.facebook.com/mybusinessme.int"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="https://www.instagram.com/mybusinessme"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+  </div>
+<!--...........................menu...................-->
+<div class="big-menu">
+  <a href="https://mybusinessme.com/en" class="a-head"><img src="https://mybusinessme.com/website/images/logo.png" class="logo-en"> <img src="https://mybusinessme.com/website/images/logo-ar.png" class="logo-ar"></a>
+ 
+<!--...........................menu item...................-->
+  <div class="btn-resposive">
+    <button class="toggle btn-res open-menu hc-nav-trigger hc-nav-1"> <i class="fas fa-bars"></i>  </button>
+    <!-- <a class="btn-res" href="https://mybusinessme.com/en/login"><i class="fas fa-user"></i></a> -->
+    <!-- <button class="btn-res"  data-toggle="modal" data-target=".search-login"><i class="fas fa-search"></i></button> -->
+  </div>
+  <!--  navigation --> 
+  <div class="nav-holder big-menu-items float-right-menu">
+    <!--  -->
+    <nav>
+      <ul>
+        <li><a href="https://mybusinessme.com/en">Home</a></li>
+        <!-- <li><a href="">Exhibitions</a></li> -->
+        <li>
+          <a href="https://mybusinessme.com/en/Search/Companies" onclick="event.preventDefault();
+                      document.getElementById('MemberProductForm').submit();"><i class="ti-layout-sidebar-left"></i> Companies          </a>
+          <form id="MemberProductForm" action="https://mybusinessme.com/en/Search/Companies" method="GET" style="display: none;">
+            <input hidden="" name="account_type_id" value="0">
+            <input hidden="" name="category_id" value="0">
+            <input hidden="" name="country_id" value="0">
+            <input hidden="" name="search">
+            <input hidden="" name="page" value="1">
+          </form>
+        </li>
+        <li><a href="https://mybusinessme.com/en/About/About">About</a></li>
+        <li><a href="https://mybusinessme.com/en/Locations/Locations">Locations</a></li>
+        <li><a href="https://mybusinessme.com/en/Blogs/AllBlogs">Tips</a></li>
+        <li><a href="https://mybusinessme.com/en/FAQs/FAQs" class="hvr-underline-from-center ">FAQs</a></li>
+       
+      </ul>
+    </nav>
+    <!--  -->
+    
+  </div>
+
+ <style type="text/css">
+    .float-right-menu{
+      float: left;
+    }
+    .float-right-menu:lang(ar){
+      /* float: right; */
+    }
+     .float-left-menu{
+      float: right;
+    }
+     .float-left-menu:lang(ar){
+      /* float: left; */
+    }
+ .float-left-menu2{
+      float: right;
+    }
+     .float-left-menu2:lang(ar){
+      /* float: left; */
+    }
+
+    .float-left-menu nav ul li ul{
+      min-width: 40px;
+    }
+     .float-left-menu nav ul li ul li {
+      margin-right: 0px  !important;
+      margin-left: 0px  !important;
+    }
+
+    .float-left-menu nav ul li ul li a{
+      text-align: center !important;
+    }
+  </style>
+
+
+
+   <div class="nav-holder big-menu-items float-left-menu">
+    <nav>
+      <ul>
+                  <li><a class="hvr-underline-from-center" href="https://mybusinessme.com/en/login">Login</a></li>
+        <li><a class="hvr-underline-from-center" href="https://mybusinessme.com/en/register">Register</a></li>
+                       
+        <li>
+                                  <a href="#">
+              <img src="https://mybusinessme.com/website/images/UK_icon.png" width="20" height="20">
+                EN
+              <i class="fa fa-caret-down"></i>
+            </a>
+                                                                                                    <ul>
+                            <li>
+                                                      <a rel="alternate" hreflang="en" href="https://mybusinessme.com/en/Locations/Locations">
+                      <img src="https://mybusinessme.com/website/images/UK_icon.png" width="20" height="20"> EN
+                    </a>
+                                                                                                                                                      </li>
+                            <li>
+                                                                                        <a rel="alternate" hreflang="ar" href="https://mybusinessme.com/ar/Locations/Locations">
+                      <img src="https://mybusinessme.com/website/images/arabic_icon.png" width="20" height="20"> AR
+                    </a>
+                                                                                                                    </li>
+                            <li>
+                                                                                                                          <a rel="alternate" hreflang="fr" href="https://mybusinessme.com/fr/Locations/Locations">
+                      <img src="https://mybusinessme.com/website/images/france_icon.png" width="20" height="20"> FR
+                    </a>
+                                                                                  </li>
+                            <li>
+                                                                                                                                                            <a rel="alternate" hreflang="tr" href="https://mybusinessme.com/tr/Locations/Locations">
+                      <img src="https://mybusinessme.com/website/images/turkey_icon.png
+" width="20" height="20"> TR
+                    </a>
+                                                </li>
+                          </ul>  
+       </li>
+     </ul>
+</nav>
+</div>
+
+
+
+
+
+
+
+
+
+
+                        <!-- navigation  end -->
+</div>  
+<!--...........................slider...................-->
+
+  
+        
+
+<!--  -->
+
+
+<header>
+  <div class="wrapper cf">
+    <nav id="main-nav">
+    <!--   <ul class="first-nav">
+       
+       
+      </ul> -->
+      <ul class="second-nav">
+  
+                
+                      <!-- <li class="collections"><a href="#">Exhibitions</a></li> -->
+              <li><a class="hvr-underline-from-center" href="https://mybusinessme.com/en">Home</a></li>
+              <li class="credits"><a href="https://mybusinessme.com/en/Search/Companies" onclick="event.preventDefault();
+                      document.getElementById('MemberProductForm').submit();"><i class="ti-layout-sidebar-left"></i> Companies          </a>
+          <form id="MemberProductForm" action="https://mybusinessme.com/en/Search/Companies" method="GET" style="display: none;">
+           <input hidden="" name="account_type_id" value="0">
+            <input hidden="" name="category_id" value="0">
+            <input hidden="" name="country_id" value="0">
+            <input hidden="" name="search">
+            <input hidden="" name="page" value="1">
+          </form>
+              </li>
+              <li class="credits hvr-underline-from-center"><a href="https://mybusinessme.com/en/About/About">About</a></li>
+              <li class="credits hvr-underline-from-center"><a href="https://mybusinessme.com/en/Locations/Locations">Locations</a></li>
+              <li class="credits hvr-underline-from-center"><a href="https://mybusinessme.com/en/Blogs/AllBlogs">Tips</a></li>
+              <li><a href="https://mybusinessme.com/en/FAQs/FAQs" class="hvr-underline-from-center" style="border-right:0px; border-left:0px;">FAQs</a></li>
+                                          <li><i class="fas fa-user i-register"></i><a href="https://mybusinessme.com/en/login" class="hvr-underline-from-center" style="border-right:0px; border-left:0px;">Login</a></li>
+              <li><a href="https://mybusinessme.com/en/register" class="hvr-underline-from-center" style="border-right:0px; border-left:0px; background-color:#e60000;">Register</a></li>
+                            <li class="credits text-center">
+                                                                              <a rel="alternate" class="links-laguage nav-item" hreflang="en" href="https://mybusinessme.com/en/Locations/Locations">
+                        <img src="https://mybusinessme.com/website/images/UK_icon.png" width="20" height="20"> 
+                      </a>
+                                                                                                                                                                                                                                                                            <a rel="alternate" class="links-laguage nav-item" hreflang="ar" href="https://mybusinessme.com/ar/Locations/Locations">
+                        <img src="https://mybusinessme.com/website/images/arabic_icon.png" width="20" height="20"> 
+                      </a>
+                                                                                                                                                                                                                                                                            <a rel="alternate" class="links-laguage nav-item" hreflang="fr" href="https://mybusinessme.com/fr/Locations/Locations">
+                        <img src="https://mybusinessme.com/website/images/france_icon.png" width="20" height="20"> 
+                      </a>
+                                                                                                                                                                                                                                                                            <a rel="alternate" class="links-laguage nav-item" hreflang="tr" href="https://mybusinessme.com/tr/Locations/Locations">
+                        <img src="https://mybusinessme.com/website/images/turkey_icon.png
+" width="20" height="20"> 
+                      </a>
+                                                                    </li>
+            </ul>
+
+            <ul class="bottom-nav">
+       
+      
+            
+                <li><a href="https://www.facebook.com/mybusinessme.int"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://www.instagram.com/mybusinessme"><i class="fab fa-instagram"></i></a></li>
+              
+             
+            </ul>
+
+          </nav>
+
+         
+
+          
+
+        </div>
+
+      </header>
+  
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+</div>
+</div>
+</div>  
+  
+
+
+         
+  
+  
+
+
+
+
+
+<!-- <div class="head-menu"></div> -->
+
+  
+  <!--...........................five sec...................-->
+  
+  
+  
+<script src="https://mybusinessme.com/website/js/modernizr.js" ></script>
+<!-- <style type="text/css">
+  .more {
+    float: left;
+  }
+  .less {
+    float: left;
+  }
+
+.head-menu{
+  height: 0px;
+}
+
+</style> -->
+<style type="text/css">
+.static_height{
+  height: 70px;
+}
+
+
+
+    .overlay-profile {
+      display: block;
+    }
+
+
+
+.profile-company{
+  background-size: 100% 100%;
+  background-attachment: local;
+}
+.h1-about {
+  font-size: 40px;
+  }
+
+.div-h1{
+  position: relative;
+  top: 160px;
+  z-index:2;
+}
+
+  .h1-location{
+    margin-top: 50px;
+    color: #fff;
+    font-size: 25px;
+    text-shadow: 0px 0px 5px #000;
+    max-width: 500px;
+    margin: 50px auto 20px auto;
+}
+
+  @media (max-width:1024px){
+  .static_height{
+  height: 10px;
+}
+
+.profile-company{
+  background-size: auto 100%;
+}
+.div-h1{
+  position: relative;
+  top: 110px;
+  z-index:2;
+}
+}
+
+
+
+</style>
+
+ <!--...........................header-div...................-->
+<div class="profile-company position-relative"  style="background-image:url(https://mybusinessme.com/website/images/locations.jpg">
+<div class="container div-h1">  <h1 class="h1-location">Our vision to cover the Arab World, Each of these locations supports the 
+neighbor countries</h1></div>
+  <!-- <div class="overlay-profile"></div> -->
+  <div class="bubble-bg"></div>
+</div>
+<style>
+   .da-thumbs li{
+   margin-top:10px;
+   }
+   .logo-company-profile{
+   visibility:hidden;
+   }
+   
+</style>
+<div class="container">
+<!--...........................section location...................-->
+<!-- <div class="section-location">
+ -->   
+<!--       <h2 class="text-center color-red">Global research requirements? We've got the world covered</h2>
+       <p class="text-center p-location">Emplacements</p>-->
+   <!-- </div> -->
+</div>
+<div class="container">
+   <!-- <hr> -->
+</div>
+<div class="section-location">
+   <div class="container">
+    
+      <!-- <h2 class="text-center color-red">Our international offices</h2>
+      <p class="text-center p-location">
+         Our experience in international market research is unparalleled. In fact, the majority of the studies we carry out involve multiple territories or regions. Whether you want to focus on a single territory or require a complex multi-country study, our team of expert researchers in seven offices across three continents can help.
+      </p> -->
+            <ul class="row  da-thumbs" id="da-thumbs">
+                <li class="col-lg-4 col-sm-6">
+          <a href="https://mybusinessme.com/en/Locations/Locations/uae">
+             <img src="https://mybusinessme.com/website/images/uae.jpg" />
+             <div><span>UAE</span></div>
+          </a>
+        </li>
+                <li class="col-lg-4 col-sm-6">
+          <a href="https://mybusinessme.com/en/Locations/Locations/egypt">
+             <img src="https://mybusinessme.com/website/images/egypt.jpg" />
+             <div><span>EGYPT</span></div>
+          </a>
+        </li>
+                <li class="col-lg-4 col-sm-6">
+          <a href="https://mybusinessme.com/en/Locations/Locations/kuwait">
+             <img src="https://mybusinessme.com/website/images/kuwait.jpg" />
+             <div><span>KUWAIT</span></div>
+          </a>
+        </li>
+                <li class="col-lg-4 col-sm-6">
+          <a href="https://mybusinessme.com/en/Locations/Locations/lebanon">
+             <img src="https://mybusinessme.com/website/images/lebanon.jpg" />
+             <div><span>LEBANON</span></div>
+          </a>
+        </li>
+                <li class="col-lg-4 col-sm-6">
+          <a href="https://mybusinessme.com/en/Locations/Locations/morocco">
+             <img src="https://mybusinessme.com/website/images/morocco.jpg" />
+             <div><span>MOROCCO</span></div>
+          </a>
+        </li>
+                <li class="col-lg-4 col-sm-6">
+          <a href="https://mybusinessme.com/en/Locations/Locations/turky">
+             <img src="https://mybusinessme.com/website/images/turky.jpg" />
+             <div><span>TURKY</span></div>
+          </a>
+        </li>
+              </ul>
+            <div class="page_navigation"></div>
+      <div class="clear"></div>
+   </div>
+</div>
+<!--...........................footer...................-->
+<style type="text/css">
+  .red_link_footer{
+    color: #FFF;
+    font-weight: bold;
+  }
+  .red_link_footer:hover{
+    color: #e60000;
+  }
+</style>
+
+<footer class="position-relative">
+<div class="brush-footer"></div>
+
+<div class="container">
+<div class="row">
+<!--.........footer1..........-->
+<div class="col-sm-4">
+
+<h3 class="h3-footer">About MyBusiness</h3>
+
+<p class="color-white p-footer">We are the catalyst to refresh the commercial & manufacturer exchange in MENA region for every business sector, by presenting new & exclusive services to reserve your global business visibility <a class="red_link_footer" href="https://mybusinessme.com/register">START NOW</a></p>
+
+
+
+
+</div>
+<!--.........footer2..........-->
+
+
+<!--.........footer3..........-->
+
+
+<div class="col-sm-4 footer-link">
+<h3 class="h3-footer">Business Sectors</h3>
+
+<ul>
+
+<p class="" style="color: #fff;">
+                Agriculture &amp; Forestry 
+                              - Apparel &amp; Clothing 
+                          - Arts &amp; Crafts 
+                          - Auto &amp; Automotive 
+                                - Banking &amp; Finance 
+                          - Building &amp; Construction 
+                                - Education &amp; Training 
+                          - Electric &amp; Electronics 
+                          - Entertainment &amp; Media 
+                                - Fashion &amp; Beauty 
+                          - Food &amp; Beverages 
+                          - Home &amp; Office 
+                          - IT &amp; Telecommunication 
+                          - Marketing &amp; Advertising 
+                          - Other 
+                          - Linguistics &amp; Translation 
+                          - Gifts 
+                          - Repair &amp; Maintenance 
+                          - Tools &amp; Equipment 
+                          - Medical &amp; Pharma 
+                          - Photography &amp; Imaging 
+                          - Shipping &amp; Transportation 
+                          - Jewellery &amp; Gems 
+                          - Metal &amp; Glass 
+                          - Security and protection 
+                          - Tourism &amp; Travel 
+                          - Insurance 
+                          - Real Estate 
+                          - Fish &amp; Meat resources 
+            </p>
+
+</ul>
+
+</div>
+
+
+
+
+
+<!--.........footer4..........-->
+
+<div class="col-sm-4">
+  <h3 class="h3-footer">Stay Updated</h3>
+  <p class="color-white p-subc">If You Want To Receive More Tips & Hacks. Plus Exclusive Offers with our Latest News Directly In Your Inbox.
+</p>
+  <div id="requiredSubscribe" class="alert alert-danger alert-dismissible fade show" style="display: none;" role="alert">
+    Email Is Required  </div>
+  <div id="invalidSubscribe" class="alert alert-danger alert-dismissible fade show" style="display: none;" role="alert">
+    Email Is Not Valid  </div>
+  <div class="position-relative footer-margin">
+    <input class="form-control input-footer" name="email" id="SubscribeEmail" type="email" required="" placeholder="Email">
+    <button class="btn btn-subc" id="SubscribeBtn">Subscribe</button>
+  </div>
+      <ul class="social-media">
+          <li><a href="https://www.facebook.com/mybusinessme.int" target="new"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="https://www.instagram.com/mybusinessme" target="new"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+  </div>
+
+
+
+<!--.........language..........-->
+
+</div>
+
+<div class="row">
+<div class="col-md-2"></div>
+<div class="col-md-8">
+<ul class="last-footer-links">
+<li><a href="https://mybusinessme.com/en/Terms/TermsConditions" class="hvr-underline-from-center">Terms & Conditions</a></li>
+<!-- <li><a href="#" class="hvr-underline-from-center">Sitemap</a></li> -->
+<li><a href="https://mybusinessme.com/en/Privacy/Privacy" class="hvr-underline-from-center">Privacy Policy</a></li>
+<li><a href="https://mybusinessme.com/en/FAQs/FAQs" class="hvr-underline-from-center" style="border-right:0px; border-left:0px;">FAQs</a></li>
+
+</ul>
+<ul class="languages-footer-ul">
+                
+                                                      <li><a rel="alternate" hreflang="en" href="https://mybusinessme.com/en/Locations/Locations">
+                       English 
+                    </a></li>
+                                                                                                                                                     
+                            
+                                                                                        <li><a rel="alternate" hreflang="ar" href="https://mybusinessme.com/ar/Locations/Locations">
+                       العربية 
+                    </a></li>
+                                                                                                                   
+                            
+                                                                                                                          <li><a rel="alternate" hreflang="fr" href="https://mybusinessme.com/fr/Locations/Locations">
+                       Français 
+                    </a></li>
+                                                                                 
+                            
+                                                                                                                                                            <li><a rel="alternate" hreflang="tr" href="https://mybusinessme.com/tr/Locations/Locations">
+                       Türkçe 
+                    </a></li>
+                                               
+              
+
+</ul>
+<hr class="hr-footer">
+
+<p class="p-coby-rights" style="direction: ltr;">©2019  <span style="color:#fff;"> MY BUSINESS</span>. All rights reserved.</p>
+
+<div class="text-center">
+  <img src="https://mybusinessme.com/website/images/logo-ibg.png" width="61" height="61" alt=""> </div>
+
+</div>
+
+</div>
+
+</div>
+</footer>
+
+
+
+
+
+
+
+
+<!--...........................social...................-->
+<!--<div id='ss_menu'>
+  <div><a href="https://www.facebook.com/gulf.erp.12" target="new" class="fab fa-facebook social_link"></a></div>
+    <div><a href="https://www.facebook.com/gulf.erp.12" target="new" class="fab fa-twitter social_link"></a></div>
+    <div><a href="https://www.facebook.com/gulf.erp.12" target="new" class="fab fa-instagram social_link"></a></div>
+  <div><a href="https://www.instagram.com/gulfcloud/" target="new" class="fab fa-pinterest social_link"></a></div>
+  <div class='menu'>
+    <div class='share' id='ss_toggle' data-rot='180'>
+      <div class='circle'></div>
+      <div class='bar'></div>
+    </div>
+  </div>
+</div>-->
+
+
+
+
+<button class="button-contact" data-toggle="modal" data-target=".contact-btn"><i class="far fa-comment-dots"></i></button>
+
+
+
+
+<div class="modal fade contact-btn"  tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-width modal-dialog-centered" role="document">
+    <div class="modal-content">
+      
+      <div class="container-fluid">
+      <div class="row">
+      <div class="col-md-5 img-pop">
+      
+      <div class="inner-image"></div>
+        </div>
+           <div class="col-md-7 padding-contact-pop-up">
+           
+          
+<h3>Contact Us  <strong class="color-red">MY BUSINESS</strong></h3>
+<input id="name" class="input-pop" placeholder="Name">
+<input id="phone" class="input-pop" placeholder="Phone">
+<input id="email_message" class="input-pop" placeholder="Email">
+<input id="subject" class="input-pop" placeholder="Subject">
+<textarea id="message" class="input-pop text-area-pop" placeholder="Message"></textarea>
+<div class="text-right">
+<button id="send_message_btn" class="btn-conatct">Send Message</button>
+</div>
+
+
+           
+
+           
+           
+           </div>
+           
+           
+           
+           
+ 
+      
+      </div>
+      
+      </div>
+      
+      
+    <button class="btn-close-pop" data-dismiss="modal"><i class="fas fa-times"></i></button>  
+     
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- search modal -->
+<div class="modal fade search-login" id="#search-login" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog max-width2 modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      
+      <div class="modal-body" style="padding:0px;">
+      
+      <button type="button" class="close btn-close-search" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      <div class="row">
+      
+            <div class="col-lg-3">
+        <div class="row">
+        <div class="filter-main">
+            
+            <h3>Search by:</h3>
+            
+            <p>Explore some of the best tips from around the city from our partners and friends.</p>
+            
+           <div class="exhibtion-div">
+ <input class="form-control input-search" placeholder="search...">
+ </div>
+ <div class="exhibtion-div"> <div class="header-search-select-item back-gray-sec">
+                            <select data-placeholder="All Categories" class="chosen-select">
+                                <option>All Categories</option>
+                                <option>Shops</option>
+                                <option>Hotels</option>
+                                <option>Restaurants</option>
+                                <option>Fitness</option>
+                                <option>Events</option>
+                            </select>
+                        </div></div>
+    <div class="exhibtion-div">  <div class="header-search-select-item back-gray-sec">
+                            <select data-placeholder="All Categories" class="chosen-select">
+                                <option>All Categories</option>
+                                <option>Shops</option>
+                                <option>Hotels</option>
+                                <option>Restaurants</option>
+                                <option>Fitness</option>
+                                <option>Events</option>
+                            </select>
+                        </div></div>
+ 
+                        
+       <button class="btn back-red btn-search-result"><i class="fas fa-search"></i> Search</button>
+
+
+
+                      
+<img src="https://mybusinessme.com/website/images/logo.png" class="logo-search">
+            
+            </div>
+            </div>
+            
+            </div>
+
+      
+      <div class="col-lg-9">
+      
+      <div class="modal-header">
+       
+      </div>
+
+      <div class="pop-main">
+      <div class="row">
+      <div class="col-lg-4 col-md-12">
+      <p class="p-search">Main Links</p>
+      
+      <ul class="seach-menus">
+
+<!-- <li><a href="#" class="hvr-underline-from-center"> Careers</a></li> -->
+<!-- <li><a href="#" class="hvr-underline-from-center"> Privacy policy</a></li> -->
+<!-- <li><a href="#" class="hvr-underline-from-center"> Terms and conditions</a></li> -->
+<!-- <li><a href="#" class="hvr-underline-from-center">Disclaimer</a></li> -->
+<!-- <li><a href="#" class="hvr-underline-from-center"> FAQs</a></li> -->
+
+
+</ul>
+ 
+      
+     
+      </div>
+
+      
+      
+      <div class="col-lg-4 col-md-6">
+      
+                  <p class="p-search">Incoming Expo</p>
+                  
+                  <a href="#" class="search-link">
+                  <h4 class="o-heading">Unveiling our Copper Building penthouses</h4>
+                  <p class="p-item-search">12/5/2019</p>
+                  <hr>
+                  </a>
+                  
+                  
+                  <a href="#" class="search-link">
+                  <h4 class="o-heading">Unveiling our Copper Building penthouses</h4>
+                  <p class="p-item-search">12/5/2019</p>
+                  <hr>
+                  </a>
+                  
+                  
+                  
+                  <a href="#" class="search-link">
+                  <h4 class="o-heading">Unveiling our Copper Building penthouses</h4>
+                  <p class="p-item-search">12/5/2019</p>
+                  </a>
+
+</div>
+
+
+
+
+      <div class="col-lg-4 col-md-6 stay-search">
+
+
+
+<h3 class="follow">Stay connected</h3>
+
+<div class="container-input">
+<input class="input-footer2" placeholder="Enter Your Mail">
+<button class="btn-sub2"><i class="fas fa-arrow-right"></i></button>
+</div>
+
+
+<h3 class="follow">Follow US</h3>
+
+<ul class="social-media2">
+       
+       <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+       <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+       <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+       <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+       <li><a href="#"><i class="fab fa-snapchat"></i></a></li>
+       <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+
+       </ul>
+
+
+</div>
+
+
+
+</div>
+
+
+
+ <hr>
+      
+            <p class="p-search">Designed by You, Built by US</p>
+            
+<a href="#" class="a-design">My Business Website  </a>
+
+
+
+</div>
+
+</div>
+      </div>
+      </div>
+            
+      
+      
+     
+    </div>
+  </div>
+</div>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://mybusinessme.com/website/js/jquery-2.1.1.js" ></script>
+<script src="https://mybusinessme.com/website/js/popper.min.js" ></script>
+<script src="https://mybusinessme.com/website/js/bootstrap.min.js" ></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://mybusinessme.com/website/js/hc-offcanvas-nav.js"></script>
+<script src="https://mybusinessme.com/website/js/respnsive-menu.js"></script>
+<script src="https://mybusinessme.com/website/js/my-js.js" ></script>
+
+
+
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+    
+  
+  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  function IsEmail(email) {
+    var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    if(!regex.test(email)) {
+      return false;
+    }else{
+      return true;
+    }
+  }
+
+  $('#SubscribeBtn').click(function()
+  {
+    var email = $('#SubscribeEmail').val();
+    var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
+    var url = "https://mybusinessme.com/en/SubScribePost/SubScribePost";
+    if(email== ''){
+      $('#SubscribeEmail').next().show();
+      $('#SubscribeEmail').focus();
+      $('#invalidSubscribe').hide();
+      $('#requiredSubscribe').show();
+      return false;
+    }
+
+    if(IsEmail(email) == false){
+      $('#invalid_email').show();
+      $('#requiredSubscribe').hide();
+      $('#invalidSubscribe').show();
+      return false;
+    }
+
+    // valid 
+    $('#invalid_email').hide();
+    $('#requiredSubscribe').hide();
+    $('#invalidSubscribe').hide();
+    //submit ajax
+    $.ajax({
+      /* the route pointing to the post function */
+      url: url,
+      type: 'POST',
+      /* send the csrf-token and the input to the controller */
+      data: {
+              _token: CSRF_TOKEN,
+              email:email,
+            },
+      dataType: 'JSON',
+      /* remind that 'data' is the response of the AjaxController */
+      success: function (data) {
+        if(data.status == 'success'){
+          // alert(data.message);
+          swal("Thank You", "You Are Subscribed Success!", "success");
+          $('#SubscribeEmail').val('');
+          return false;
+        }
+
+        if(data.status == 'exist'){
+          // alert(data.message);
+          swal("Already Subscribed", data.message, "info");
+          $('#SubscribeEmail').val('');
+          $('#SubscribeEmail').focus();
+          return false;
+        }
+
+        if(data.status == 'error'){
+          swal("Error", data.message, "error");
+          $('#SubscribeEmail').val('');
+          $('#SubscribeEmail').focus();
+          return false;
+        }
+      },
+      error: function(data){
+        console.log('error');
+      }
+    }); 
+  });
+
+
+// our messages guests
+$('#send_message_btn').click(function()
+  {
+    var email = $('#email_message').val();
+    var name = $('#name').val();
+    var phone = $('#phone').val();
+    var subject = $('#subject').val();
+    var message = $('#message').val();
+    var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
+    var url = "https://mybusinessme.com/en/our_messages_ajax_post";
+    // name validation
+    if (name == ''){
+      $('#name').next().show();
+      $('#name').focus();
+      $("#name").attr("placeholder", "Name Is Required");
+      $("#name").css("border-bottom","solid 1px red");
+      $("#name").css("box-shadow","0px 0px 3px red");
+      return false;
+    }
+
+    if(name != ''){
+      $("#name").attr("placeholder", "");
+      $("#name").css("border-bottom","");
+      $("#name").css("box-shadow","");
+    }
+
+    // email validation
+    if(email == ''){
+      $('#email_message').next().show();
+      $('#email_message').focus();
+      $("#email_message").attr("placeholder", "Email Is Required");
+      $("#email_message").css("border-bottom","solid 1px red");
+      $("#email_message").css("box-shadow","0px 0px 3px red");
+      return false;
+    }
+    if(IsEmail(email) == false){
+      $('#email_message').focus();
+      $('#email_message').val('');
+      $("#email_message").attr("placeholder", "Email Is Not Valid");
+      $("#email_message").css("border-bottom","solid 1px red");
+      $("#email_message").css("box-shadow","0px 0px 3px red");
+      return false;
+    }
+
+    if(IsEmail(email) == true){
+      $("#email_message").attr("placeholder", "");
+      $("#email_message").css("border-bottom","");
+      $("#email_message").css("box-shadow","");
+    }
+
+    // subject validation
+    if(subject == ''){
+      $('#subject').focus();
+      $('#subject').val('');
+      $("#subject").attr("placeholder", "website.subject_is_required");
+      $("#subject").css("border-bottom","solid 1px red");
+      $("#subject").css("box-shadow","0px 0px 3px red");
+      return false;
+    }
+
+
+    if(subject != ''){
+      $("#subject").attr("placeholder", "");
+      $("#subject").css("border-bottom","");
+      $("#subject").css("box-shadow","");
+    }
+
+
+    // message validation
+    if(message == ''){
+      $('#message').focus();
+      $('#message').val('');
+      $("#message").attr("placeholder", "website.message_is_required");
+      $("#message").css("border-bottom","solid 1px red");
+      $("#message").css("box-shadow","0px 0px 3px red");
+      return false;
+    }
+
+
+    if(message != ''){
+      $("#message").attr("placeholder", "");
+      $("#message").css("border-bottom","");
+      $("#message").css("box-shadow","");
+    }
+    //submit ajax
+    console.log('in ajax now');
+    $.ajax({
+      /* the route pointing to the post function */
+      url: url,
+      type: 'POST',
+      /* send the csrf-token and the input to the controller */
+      data: {
+              _token: CSRF_TOKEN,
+              email:email,
+              name:name,
+              phone:phone,
+              subject:subject,
+              message:message,
+            },
+      dataType: 'JSON',
+      /* remind that 'data' is the response of the AjaxController */
+      success: function (data) {
+        console.log('success',data);
+        if(data.status == 'success'){
+          // alert(data.message);
+          swal("Thank You", "Your Message Has Been Sent Success", "success");
+          $("#name").val('');
+          $("#email_message").val('');
+          $("#phone").val('');
+          $("#subject").val('');
+          $("#message").val('');
+
+          $("#name").attr("placeholder", "Name");
+          $("#email_message").attr("placeholder", "Email");
+          $("#phone").attr("placeholder", "Phone");
+          $("#subject").attr("placeholder", "Subject");
+          $("#message").attr("placeholder", "Message");
+          return false;
+        }
+
+        if(data.status == 'error'){
+          swal("Error", data.message, "error");
+          $('#email_message').val('');
+          $('#email_message').focus();
+          return false;
+        }
+      },
+      error: function(data){
+        console.log('error',data);
+      }
+    }); 
+  });
+})
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+</script><script src="https://mybusinessme.com/website/js/jquery.hoverdir.js" ></script>
+<script type="text/javascript">
+      $(function() {
+      
+        $(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
+
+      });
+    </script>
+
+
+
+
+
+
+
+
+
+    
+
+
+  </body>
+</html>

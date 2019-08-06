@@ -1,0 +1,691 @@
+
+<!--...........................footer...................-->
+<style type="text/css">
+  .red_link_footer{
+    color: #FFF;
+    font-weight: bold;
+  }
+  .red_link_footer:hover{
+    color: #e60000;
+  }
+</style>
+
+<footer class="position-relative">
+<div class="brush-footer"></div>
+
+<div class="container">
+<div class="row">
+<!--.........footer1..........-->
+<div class="col-sm-4">
+
+<h3 class="h3-footer">@lang('website.about_us')</h3>
+
+<p class="color-white p-footer">@lang('website.about_us_content')</p>
+
+
+
+
+</div>
+<!--.........footer2..........-->
+
+{{--
+<div class="col-sm-4">
+
+<h3 class="h3-footer">@lang('website.hot_news_and_trends')</h3>
+<!--.........news..........-->
+
+<div class="row">
+<div class="col-5"><img src="{{asset('website/images/news-footer.jpg')}}" class="news-footer"></div>
+<div class="col-7">
+<h6 class="h6-footer">Vivamus dapibus rutrum</h6>
+<p class="p-news color-red">1 day ago</p>
+</div>
+
+</div>
+
+
+
+<!--.........news..........-->
+
+<div class="row">
+<div class="col-5"><img src="{{asset('website/images/news-footer2.jpg')}}" class="news-footer"></div>
+<div class="col-7">
+<h6 class="h6-footer">Vivamus dapibus rutrum</h6>
+<p class="p-news color-red">1 day ago</p>
+</div>
+
+</div>
+
+
+<!--.........news..........-->
+
+<div class="row">
+<div class="col-5"><img src="{{asset('website/images/news-footer3.jpg')}}" class="news-footer"></div>
+<div class="col-7">
+<h6 class="h6-footer">Vivamus dapibus rutrum</h6>
+<p class="p-news color-red">1 day ago</p>
+</div>
+
+</div>
+
+<!--.........news..........-->
+
+
+
+</div>
+--}}
+<!--.........footer3..........-->
+
+
+<div class="col-sm-4 footer-link">
+<h3 class="h3-footer">@lang('website.business_sectors')</h3>
+@php
+$curr_lang = DB::table('languages')->where('lang',LaravelLocalization::getCurrentLocale())->first();
+$sectors = DB::table('exh_cat_trans')->where('lang_id',$curr_lang->id)->get();
+@endphp
+
+<ul>
+
+<p class="" style="color: #fff;">
+  @foreach($sectors as $index=>$sector)
+    @if($sector->exh_cat_id != 2 && $sector->exh_cat_id != 9 && $sector->exh_cat_id != 13 && $sector->exh_cat_id != 6)
+    @if($index == 0)
+      {{$sector->cat_name}} 
+    @else
+      - {{$sector->cat_name}} 
+      @endif
+    @endif
+  @endforeach</p>
+
+</ul>
+
+</div>
+
+
+
+
+
+<!--.........footer4..........-->
+
+<div class="col-sm-4">
+  <h3 class="h3-footer">@lang('website.stay_updated')</h3>
+  <p class="color-white p-subc">@lang('website.subscribe_content')</p>
+  <div id="requiredSubscribe" class="alert alert-danger alert-dismissible fade show" style="display: none;" role="alert">
+    @lang('website.email_is_required')
+  </div>
+  <div id="invalidSubscribe" class="alert alert-danger alert-dismissible fade show" style="display: none;" role="alert">
+    @lang('website.email_not_valid')
+  </div>
+  <div class="position-relative footer-margin">
+    <input class="form-control input-footer" name="email" id="SubscribeEmail" type="email" required="" placeholder="{{trans('website.email')}}">
+    <button class="btn btn-subc" id="SubscribeBtn">@lang('website.subscribe')</button>
+  </div>
+  @php
+    $our_social_links = DB::table('our_social_links')->where('active',1)->get();
+  @endphp
+  @if(isset($our_social_links))
+  <ul class="social-media">
+    @foreach($our_social_links as $social)
+      <li><a href="{{$social->link}}" target="new"><i class="{{$social->icon}}"></i></a></li>
+    @endforeach
+  </ul>
+  @endif
+</div>
+
+
+
+<!--.........language..........-->
+
+@php
+  $languages = DB::table('languages')->get();
+  use App\Helpers\Helper;
+  $OurSocialMediaLinks = Helper::OurSocialMediaLinks();
+  $languages = DB::table('languages')->where('shown',1)->get();
+@endphp
+</div>
+
+<div class="row">
+<div class="col-md-2"></div>
+<div class="col-md-8">
+<ul class="last-footer-links">
+<li><a href="{{url('/')}}/{{LaravelLocalization::getCurrentLocale()}}/Terms/TermsConditions" class="hvr-underline-from-center">@lang('website.terms_conditions')</a></li>
+<!-- <li><a href="#" class="hvr-underline-from-center">@lang('website.sitemap')</a></li> -->
+<li><a href="{{url('/')}}/{{LaravelLocalization::getCurrentLocale()}}/Privacy/Privacy" class="hvr-underline-from-center">@lang('website.privacy_policy')</a></li>
+<li><a href="{{url('/')}}/{{LaravelLocalization::getCurrentLocale()}}/FAQs/FAQs" class="hvr-underline-from-center" style="border-right:0px; border-left:0px;">@lang('website.faqs')</a></li>
+
+</ul>
+<ul class="languages-footer-ul">
+  @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+              
+                @foreach($languages as $language)
+                  @if($language->lang == $localeCode)
+                    <li><a rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
+                       {{ $properties['native'] }} 
+                    </a></li>
+                  @endif
+                @endforeach
+             
+              @endforeach
+
+
+</ul>
+<hr class="hr-footer">
+
+<p class="p-coby-rights" style="direction: ltr;">©2019  <span style="color:#fff;"> MY BUSINESS</span>. All rights reserved.</p>
+
+<div class="text-center">
+  <img src="{{asset('website/images/logo-ibg.png')}}" width="61" height="61" alt=""> </div>
+
+</div>
+
+</div>
+
+</div>
+</footer>
+
+
+
+
+
+
+
+
+<!--...........................social...................-->
+<!--<div id='ss_menu'>
+  <div><a href="https://www.facebook.com/gulf.erp.12" target="new" class="fab fa-facebook social_link"></a></div>
+    <div><a href="https://www.facebook.com/gulf.erp.12" target="new" class="fab fa-twitter social_link"></a></div>
+    <div><a href="https://www.facebook.com/gulf.erp.12" target="new" class="fab fa-instagram social_link"></a></div>
+  <div><a href="https://www.instagram.com/gulfcloud/" target="new" class="fab fa-pinterest social_link"></a></div>
+  <div class='menu'>
+    <div class='share' id='ss_toggle' data-rot='180'>
+      <div class='circle'></div>
+      <div class='bar'></div>
+    </div>
+  </div>
+</div>-->
+
+
+
+
+<button class="button-contact" data-toggle="modal" data-target=".contact-btn"><i class="far fa-comment-dots"></i></button>
+
+
+
+
+<div class="modal fade contact-btn"  tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-width modal-dialog-centered" role="document">
+    <div class="modal-content">
+      
+      <div class="container-fluid">
+      <div class="row">
+      <div class="col-md-5 img-pop">
+      
+      <div class="inner-image"></div>
+        </div>
+           <div class="col-md-7 padding-contact-pop-up">
+           
+          
+<h3>@lang('website.contact_us')  <strong class="color-red">MY BUSINESS</strong></h3>
+<input id="name" class="input-pop" placeholder="{{trans('website.name')}}">
+<input id="phone" class="input-pop" placeholder="{{trans('website.phone')}}">
+<input id="email_message" class="input-pop" placeholder="{{trans('website.email')}}">
+<input id="subject" class="input-pop" placeholder="{{trans('website.subject')}}">
+<textarea id="message" class="input-pop text-area-pop" placeholder="{{trans('website.message')}}"></textarea>
+<div class="text-right">
+<button id="send_message_btn" class="btn-conatct">@lang('website.send_message')</button>
+</div>
+
+
+           
+
+           
+           
+           </div>
+           
+           
+           
+           
+ 
+      
+      </div>
+      
+      </div>
+      
+      
+    <button class="btn-close-pop" data-dismiss="modal"><i class="fas fa-times"></i></button>  
+     
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- search modal -->
+<div class="modal fade search-login" id="#search-login" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog max-width2 modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      
+      <div class="modal-body" style="padding:0px;">
+      
+      <button type="button" class="close btn-close-search" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      <div class="row">
+      
+            <div class="col-lg-3">
+        <div class="row">
+        <div class="filter-main">
+            
+            <h3>Search by:</h3>
+            
+            <p>Explore some of the best tips from around the city from our partners and friends.</p>
+            
+           <div class="exhibtion-div">
+ <input class="form-control input-search" placeholder="search...">
+ </div>
+ <div class="exhibtion-div"> <div class="header-search-select-item back-gray-sec">
+                            <select data-placeholder="All Categories" class="chosen-select">
+                                <option>All Categories</option>
+                                <option>Shops</option>
+                                <option>Hotels</option>
+                                <option>Restaurants</option>
+                                <option>Fitness</option>
+                                <option>Events</option>
+                            </select>
+                        </div></div>
+    <div class="exhibtion-div">  <div class="header-search-select-item back-gray-sec">
+                            <select data-placeholder="All Categories" class="chosen-select">
+                                <option>All Categories</option>
+                                <option>Shops</option>
+                                <option>Hotels</option>
+                                <option>Restaurants</option>
+                                <option>Fitness</option>
+                                <option>Events</option>
+                            </select>
+                        </div></div>
+ 
+                        
+       <button class="btn back-red btn-search-result"><i class="fas fa-search"></i> Search</button>
+
+
+
+                      
+<img src="{{asset('website/images/logo.png')}}" class="logo-search">
+            
+            </div>
+            </div>
+            
+            </div>
+
+      
+      <div class="col-lg-9">
+      
+      <div class="modal-header">
+       
+      </div>
+
+      <div class="pop-main">
+      <div class="row">
+      <div class="col-lg-4 col-md-12">
+      <p class="p-search">@lang('website.main_links')</p>
+      
+      <ul class="seach-menus">
+
+<!-- <li><a href="#" class="hvr-underline-from-center"> Careers</a></li> -->
+<!-- <li><a href="#" class="hvr-underline-from-center"> Privacy policy</a></li> -->
+<!-- <li><a href="#" class="hvr-underline-from-center"> Terms and conditions</a></li> -->
+<!-- <li><a href="#" class="hvr-underline-from-center">Disclaimer</a></li> -->
+<!-- <li><a href="#" class="hvr-underline-from-center"> FAQs</a></li> -->
+
+
+</ul>
+ 
+      
+     
+      </div>
+
+      
+      
+      <div class="col-lg-4 col-md-6">
+      
+                  <p class="p-search">Incoming Expo</p>
+                  
+                  <a href="#" class="search-link">
+                  <h4 class="o-heading">Unveiling our Copper Building penthouses</h4>
+                  <p class="p-item-search">12/5/2019</p>
+                  <hr>
+                  </a>
+                  
+                  
+                  <a href="#" class="search-link">
+                  <h4 class="o-heading">Unveiling our Copper Building penthouses</h4>
+                  <p class="p-item-search">12/5/2019</p>
+                  <hr>
+                  </a>
+                  
+                  
+                  
+                  <a href="#" class="search-link">
+                  <h4 class="o-heading">Unveiling our Copper Building penthouses</h4>
+                  <p class="p-item-search">12/5/2019</p>
+                  </a>
+
+</div>
+
+
+
+
+      <div class="col-lg-4 col-md-6 stay-search">
+
+
+
+<h3 class="follow">Stay connected</h3>
+
+<div class="container-input">
+<input class="input-footer2" placeholder="Enter Your Mail">
+<button class="btn-sub2"><i class="fas fa-arrow-right"></i></button>
+</div>
+
+
+<h3 class="follow">Follow US</h3>
+
+<ul class="social-media2">
+       
+       <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+       <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+       <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+       <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+       <li><a href="#"><i class="fab fa-snapchat"></i></a></li>
+       <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+
+       </ul>
+
+
+</div>
+
+
+
+</div>
+
+
+
+ <hr>
+      
+            <p class="p-search">Designed by You, Built by US</p>
+            
+<a href="#" class="a-design">My Business Website  </a>
+
+
+
+</div>
+
+</div>
+      </div>
+      </div>
+            
+      
+      
+     
+    </div>
+  </div>
+</div>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="{{asset('website/js/jquery-2.1.1.js')}}" ></script>
+<script src="{{asset('website/js/popper.min.js')}}" ></script>
+<script src="{{asset('website/js/bootstrap.min.js')}}" ></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="{{asset('website/js/hc-offcanvas-nav.js')}}"></script>
+<script src="{{asset('website/js/respnsive-menu.js')}}"></script>
+<script src="{{asset('website/js/my-js.js')}}" ></script>
+
+
+
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+  // @if (Session::has('success'))
+  //   swal("Success", "{{session::get('success')}}", "success");
+  // @endif
+  // @if (Session::has('wallet_not_enough'))
+  //   swal( "Information" ,  "To Complete Your Profile Please Add Balance To Your Wallet" ,  "error" );
+  // @endif
+
+  // @if (Session::has('no_change'))
+  //   swal( "Information" ,  "{{session::get('no_change')}}" ,  "info" );
+  // @endif
+
+  // @if (Session::has('error'))
+  //   swal( "Error" ,  "{{session::get('error')}}" ,  "error" );
+  // @endif
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  function IsEmail(email) {
+    var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    if(!regex.test(email)) {
+      return false;
+    }else{
+      return true;
+    }
+  }
+
+  $('#SubscribeBtn').click(function()
+  {
+    var email = $('#SubscribeEmail').val();
+    var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
+    var url = "{{Route('SubScribePost')}}";
+    if(email== ''){
+      $('#SubscribeEmail').next().show();
+      $('#SubscribeEmail').focus();
+      $('#invalidSubscribe').hide();
+      $('#requiredSubscribe').show();
+      return false;
+    }
+
+    if(IsEmail(email) == false){
+      $('#invalid_email').show();
+      $('#requiredSubscribe').hide();
+      $('#invalidSubscribe').show();
+      return false;
+    }
+
+    // valid 
+    $('#invalid_email').hide();
+    $('#requiredSubscribe').hide();
+    $('#invalidSubscribe').hide();
+    //submit ajax
+    $.ajax({
+      /* the route pointing to the post function */
+      url: url,
+      type: 'POST',
+      /* send the csrf-token and the input to the controller */
+      data: {
+              _token: CSRF_TOKEN,
+              email:email,
+            },
+      dataType: 'JSON',
+      /* remind that 'data' is the response of the AjaxController */
+      success: function (data) {
+        if(data.status == 'success'){
+          // alert(data.message);
+          swal("{{trans('website.thank_you')}}", "{{trans('website.you_are_subscribed_success')}}", "success");
+          $('#SubscribeEmail').val('');
+          return false;
+        }
+
+        if(data.status == 'exist'){
+          // alert(data.message);
+          swal("{{trans('website.already_subscribed!')}}", data.message, "info");
+          $('#SubscribeEmail').val('');
+          $('#SubscribeEmail').focus();
+          return false;
+        }
+
+        if(data.status == 'error'){
+          swal("Error", data.message, "error");
+          $('#SubscribeEmail').val('');
+          $('#SubscribeEmail').focus();
+          return false;
+        }
+      },
+      error: function(data){
+        console.log('error');
+      }
+    }); 
+  });
+
+
+// our messages guests
+$('#send_message_btn').click(function()
+  {
+    var email = $('#email_message').val();
+    var name = $('#name').val();
+    var phone = $('#phone').val();
+    var subject = $('#subject').val();
+    var message = $('#message').val();
+    var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
+    var url = "{{Route('our_messages_ajax_post')}}";
+    // name validation
+    if (name == ''){
+      $('#name').next().show();
+      $('#name').focus();
+      $("#name").attr("placeholder", "{{trans('website.name_is_required')}}");
+      $("#name").css("border-bottom","solid 1px red");
+      $("#name").css("box-shadow","0px 0px 3px red");
+      return false;
+    }
+
+    if(name != ''){
+      $("#name").attr("placeholder", "");
+      $("#name").css("border-bottom","");
+      $("#name").css("box-shadow","");
+    }
+
+    // email validation
+    if(email == ''){
+      $('#email_message').next().show();
+      $('#email_message').focus();
+      $("#email_message").attr("placeholder", "{{trans('website.email_is_required')}}");
+      $("#email_message").css("border-bottom","solid 1px red");
+      $("#email_message").css("box-shadow","0px 0px 3px red");
+      return false;
+    }
+    if(IsEmail(email) == false){
+      $('#email_message').focus();
+      $('#email_message').val('');
+      $("#email_message").attr("placeholder", "{{trans('website.email_not_valid')}}");
+      $("#email_message").css("border-bottom","solid 1px red");
+      $("#email_message").css("box-shadow","0px 0px 3px red");
+      return false;
+    }
+
+    if(IsEmail(email) == true){
+      $("#email_message").attr("placeholder", "");
+      $("#email_message").css("border-bottom","");
+      $("#email_message").css("box-shadow","");
+    }
+
+    // subject validation
+    if(subject == ''){
+      $('#subject').focus();
+      $('#subject').val('');
+      $("#subject").attr("placeholder", "{{trans('website.subject_is_required')}}");
+      $("#subject").css("border-bottom","solid 1px red");
+      $("#subject").css("box-shadow","0px 0px 3px red");
+      return false;
+    }
+
+
+    if(subject != ''){
+      $("#subject").attr("placeholder", "");
+      $("#subject").css("border-bottom","");
+      $("#subject").css("box-shadow","");
+    }
+
+
+    // message validation
+    if(message == ''){
+      $('#message').focus();
+      $('#message').val('');
+      $("#message").attr("placeholder", "{{trans('website.message_is_required')}}");
+      $("#message").css("border-bottom","solid 1px red");
+      $("#message").css("box-shadow","0px 0px 3px red");
+      return false;
+    }
+
+
+    if(message != ''){
+      $("#message").attr("placeholder", "");
+      $("#message").css("border-bottom","");
+      $("#message").css("box-shadow","");
+    }
+    //submit ajax
+    console.log('in ajax now');
+    $.ajax({
+      /* the route pointing to the post function */
+      url: url,
+      type: 'POST',
+      /* send the csrf-token and the input to the controller */
+      data: {
+              _token: CSRF_TOKEN,
+              email:email,
+              name:name,
+              phone:phone,
+              subject:subject,
+              message:message,
+            },
+      dataType: 'JSON',
+      /* remind that 'data' is the response of the AjaxController */
+      success: function (data) {
+        console.log('success',data);
+        if(data.status == 'success'){
+          // alert(data.message);
+          swal("{{trans('website.thank_you')}}", "{{trans('website.your_message_has_been_sent_success')}}", "success");
+          $("#name").val('');
+          $("#email_message").val('');
+          $("#phone").val('');
+          $("#subject").val('');
+          $("#message").val('');
+
+          $("#name").attr("placeholder", "{{trans('website.name')}}");
+          $("#email_message").attr("placeholder", "{{trans('website.email')}}");
+          $("#phone").attr("placeholder", "{{trans('website.phone')}}");
+          $("#subject").attr("placeholder", "{{trans('website.subject')}}");
+          $("#message").attr("placeholder", "{{trans('website.message')}}");
+          return false;
+        }
+
+        if(data.status == 'error'){
+          swal("Error", data.message, "error");
+          $('#email_message').val('');
+          $('#email_message').focus();
+          return false;
+        }
+      },
+      error: function(data){
+        console.log('error',data);
+      }
+    }); 
+  });
+})
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+</script>

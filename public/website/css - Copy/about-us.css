@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+
+.head-accordion{font-size: 18px;margin-bottom:0px;cursor:pointer;position:relative;padding-right: 24px;padding: 15px 50px 15px 0px;/* background-color: #7d7d7d; */color: #000000;font-weight: bold;}
+.back-accordion:first-child{
+	border-radius:0px;
+}
+.back-accordion{background-color:transparent;/* border:1px solid #333; */padding: 0px;border-bottom: 1px solid #333;}
+.border-card .card-body{}
+.icon-accordion{font-size: 17px;position:absolute;right: 15px;top: 15px;}
+.ul-accodion{
+padding:0px 10px;
+margin:0px;
+}
+.ul-accodion li{
+list-style:disc;
+}
+.p-about{
+font-size:16px;
+}
+
+.h2-contact-about{
+margin:20px 0px;
+}
+
+.p-ticked{
+font-size:16px;
+font-weight:bold;
+}
+.border-card{
+border:none;
+}
+.about-business{
+border-radius:5px;
+}
+
+.h3-about-2{margin-top: 74px;font-size: 25px;font-weight: bold;}
+

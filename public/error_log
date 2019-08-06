@@ -1,0 +1,154 @@
+[02-Apr-2019 12:02:48 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Controller' not found in /home/mybusiu2/new.mybusinessme.com/app/Http/Controllers/Website/PagesController.php on line 10
+[04-Apr-2019 14:19:12 UTC] PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/mybusiu2/new.mybusinessme.com/vendor/laravel/framework/src/Illuminate/Container/Container.php:779
+Stack trace:
+#0 /home/mybusiu2/new.mybusinessme.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(779): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/mybusiu2/new.mybusinessme.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(658): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/mybusiu2/new.mybusinessme.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(609): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array)
+#3 /home/mybusiu2/new.mybusinessme.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(759): Illuminate\Container\Container->make('App\\Exceptions\\...', Array)
+#4 /home/mybusiu2/new.mybusinessme.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(264): Illuminate\Foundation\Applic in /home/mybusiu2/new.mybusinessme.com/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 779
+[04-Apr-2019 14:19:12 UTC] PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/mybusiu2/new.mybusinessme.com/vendor/laravel/framework/src/Illuminate/Container/Container.php:779
+Stack trace:
+#0 /home/mybusiu2/new.mybusinessme.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(779): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/mybusiu2/new.mybusinessme.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(658): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/mybusiu2/new.mybusinessme.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(609): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array)
+#3 /home/mybusiu2/new.mybusinessme.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(759): Illuminate\Container\Container->make('App\\Exceptions\\...', Array)
+#4 /home/mybusiu2/new.mybusinessme.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(264): Illuminate\Foundation\Applic in /home/mybusiu2/new.mybusinessme.com/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 779
+[04-Apr-2019 14:19:15 UTC] PHP Fatal error:  Uncaught ReflectionException: Class App\Http\Kernel does not exist in /home/mybusiu2/new.mybusinessme.com/vendor/laravel/framework/src/Illuminate/Container/Container.php:779
+Stack trace:
+#0 /home/mybusiu2/new.mybusinessme.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(779): ReflectionClass->__construct('App\\Http\\Kernel')
+#1 /home/mybusiu2/new.mybusinessme.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(658): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#2 /home/mybusiu2/new.mybusinessme.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(609): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array)
+#3 /home/mybusiu2/new.mybusinessme.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(759): Illuminate\Container\Container->make('App\\Http\\Kernel', Array)
+#4 /home/mybusiu2/new.mybusinessme.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(264): Illuminate\Foundation\Application->make('App\\H in /home/mybusiu2/new.mybusinessme.com/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 779
+[07-Apr-2019 13:15:03 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Controller' not found in /home/mybusiu2/new.mybusinessme.com/app/Http/Controllers/Website/ExhibitionsController.php on line 13
+[21-Apr-2019 13:39:57 UTC] PHP Warning:  require(/home/mybusiu2/repository/mybusiness/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home/mybusiu2/repository/mybusiness/public/index.php on line 24
+[21-Apr-2019 13:39:57 UTC] PHP Fatal error:  require(): Failed opening required '/home/mybusiu2/repository/mybusiness/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/mybusiu2/repository/mybusiness/public/index.php on line 24
+[21-Apr-2019 13:39:59 UTC] PHP Warning:  require(/home/mybusiu2/repository/mybusiness/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home/mybusiu2/repository/mybusiness/public/index.php on line 24
+[21-Apr-2019 13:39:59 UTC] PHP Fatal error:  require(): Failed opening required '/home/mybusiu2/repository/mybusiness/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/mybusiu2/repository/mybusiness/public/index.php on line 24
+[21-Apr-2019 13:40:03 UTC] PHP Warning:  require(/home/mybusiu2/repository/mybusiness/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home/mybusiu2/repository/mybusiness/public/index.php on line 24
+[21-Apr-2019 13:40:03 UTC] PHP Fatal error:  require(): Failed opening required '/home/mybusiu2/repository/mybusiness/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/mybusiu2/repository/mybusiness/public/index.php on line 24
+[21-Apr-2019 13:40:05 UTC] PHP Warning:  require(/home/mybusiu2/repository/mybusiness/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home/mybusiu2/repository/mybusiness/public/index.php on line 24
+[21-Apr-2019 13:40:05 UTC] PHP Fatal error:  require(): Failed opening required '/home/mybusiu2/repository/mybusiness/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/mybusiu2/repository/mybusiness/public/index.php on line 24
+[21-Apr-2019 13:40:07 UTC] PHP Warning:  require(/home/mybusiu2/repository/mybusiness/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home/mybusiu2/repository/mybusiness/public/index.php on line 24
+[21-Apr-2019 13:40:07 UTC] PHP Fatal error:  require(): Failed opening required '/home/mybusiu2/repository/mybusiness/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/mybusiu2/repository/mybusiness/public/index.php on line 24
+[21-Apr-2019 13:40:08 UTC] PHP Warning:  require(/home/mybusiu2/repository/mybusiness/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home/mybusiu2/repository/mybusiness/public/index.php on line 24
+[21-Apr-2019 13:40:08 UTC] PHP Fatal error:  require(): Failed opening required '/home/mybusiu2/repository/mybusiness/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/mybusiu2/repository/mybusiness/public/index.php on line 24
+[21-Apr-2019 13:40:16 UTC] PHP Warning:  require(/home/mybusiu2/repository/mybusiness/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home/mybusiu2/repository/mybusiness/public/index.php on line 24
+[21-Apr-2019 13:40:16 UTC] PHP Fatal error:  require(): Failed opening required '/home/mybusiu2/repository/mybusiness/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/mybusiu2/repository/mybusiness/public/index.php on line 24
+[24-Apr-2019 16:11:09 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Controller' not found in /home/mybusiu2/repository/mybusiness/app/Http/Controllers/Website/MemberProfileController.php on line 12
+[24-Apr-2019 16:19:00 UTC] PHP Fatal error:  Uncaught ReflectionException: Class App\Http\Kernel does not exist in /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Container/Container.php:779
+Stack trace:
+#0 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Container/Container.php(779): ReflectionClass->__construct('App\\Http\\Kernel')
+#1 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Container/Container.php(658): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#2 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Container/Container.php(609): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array)
+#3 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(759): Illuminate\Container\Container->make('App\\Http\\Kernel', Array)
+#4 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Container/Container.php(264): Illuminate\Foundation\Application->make(' in /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 779
+[25-Apr-2019 10:56:04 UTC] PHP Fatal error:  Cannot redeclare App\Helpers\decrypt() (previously declared in /home/mybusiu2/repository/mybusiness/app/Helpers/Knet.php:19) in /home/mybusiu2/repository/mybusiness/app/Helpers/Knet.php on line 63
+[25-Apr-2019 10:56:10 UTC] PHP Fatal error:  Cannot redeclare App\Helpers\decrypt() (previously declared in /home/mybusiu2/repository/mybusiness/app/Helpers/Knet.php:19) in /home/mybusiu2/repository/mybusiness/app/Helpers/Knet.php on line 63
+[25-Apr-2019 10:56:18 UTC] PHP Fatal error:  Cannot redeclare App\Helpers\decrypt() (previously declared in /home/mybusiu2/repository/mybusiness/app/Helpers/Knet.php:19) in /home/mybusiu2/repository/mybusiness/app/Helpers/Knet.php on line 63
+[25-Apr-2019 10:56:22 UTC] PHP Fatal error:  Cannot redeclare App\Helpers\decrypt() (previously declared in /home/mybusiu2/repository/mybusiness/app/Helpers/Knet.php:19) in /home/mybusiu2/repository/mybusiness/app/Helpers/Knet.php on line 63
+[25-Apr-2019 10:57:02 UTC] PHP Fatal error:  Cannot redeclare App\Helpers\decrypt() (previously declared in /home/mybusiu2/repository/mybusiness/app/Helpers/Knet.php:19) in /home/mybusiu2/repository/mybusiness/app/Helpers/Knet.php on line 63
+[25-Apr-2019 10:57:05 UTC] PHP Fatal error:  Cannot redeclare App\Helpers\decrypt() (previously declared in /home/mybusiu2/repository/mybusiness/app/Helpers/Knet.php:19) in /home/mybusiu2/repository/mybusiness/app/Helpers/Knet.php on line 63
+[25-Apr-2019 10:57:07 UTC] PHP Fatal error:  Cannot redeclare App\Helpers\decrypt() (previously declared in /home/mybusiu2/repository/mybusiness/app/Helpers/Knet.php:19) in /home/mybusiu2/repository/mybusiness/app/Helpers/Knet.php on line 63
+[25-Apr-2019 10:57:14 UTC] PHP Fatal error:  Cannot redeclare App\Helpers\decrypt() (previously declared in /home/mybusiu2/repository/mybusiness/app/Helpers/Knet.php:19) in /home/mybusiu2/repository/mybusiness/app/Helpers/Knet.php on line 63
+[25-Apr-2019 11:00:18 UTC] PHP Fatal error:  Cannot redeclare App\Helpers\decrypt() (previously declared in /home/mybusiu2/repository/mybusiness/app/Helpers/Knet.php:19) in /home/mybusiu2/repository/mybusiness/app/Helpers/Knet.php on line 63
+[25-Apr-2019 11:00:20 UTC] PHP Fatal error:  Cannot redeclare App\Helpers\decrypt() (previously declared in /home/mybusiu2/repository/mybusiness/app/Helpers/Knet.php:19) in /home/mybusiu2/repository/mybusiness/app/Helpers/Knet.php on line 63
+[25-Apr-2019 11:00:22 UTC] PHP Fatal error:  Cannot redeclare App\Helpers\decrypt() (previously declared in /home/mybusiu2/repository/mybusiness/app/Helpers/Knet.php:19) in /home/mybusiu2/repository/mybusiness/app/Helpers/Knet.php on line 63
+[01-May-2019 16:23:48 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/mybusiu2/repository/mybusiness/storage/framework/views/fe491bea1e49f0db4de3be02da1884822da81ad9.php on line 104
+[01-May-2019 16:23:53 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/mybusiu2/repository/mybusiness/storage/framework/views/fe491bea1e49f0db4de3be02da1884822da81ad9.php on line 104
+[06-May-2019 10:31:38 UTC] PHP Fatal error:  Uncaught InvalidArgumentException: Route [home_page] not defined. in /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:389
+Stack trace:
+#0 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(822): Illuminate\Routing\UrlGenerator->route('home_page', Array, true)
+#1 /home/mybusiu2/repository/mybusiness/storage/framework/views/6f91c577c7cfcd01dfc6a39ae862c90e3452755c.php(473): route('home_page')
+#2 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(43): include('/home/mybusiu2/...')
+#3 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(59): Illuminate\View\Engines\PhpEngine->evaluatePath('/home/mybusiu2/...', Array)
+#4 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/View/View.php(142): Illuminate\View\Engines\CompilerEngine->get('/home/mybusiu2/...', Array)
+#5 /home/mybusiu2/r in /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php on line 389
+[06-May-2019 10:31:38 UTC] PHP Fatal error:  Uncaught InvalidArgumentException: Route [home_page] not defined. in /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:389
+Stack trace:
+#0 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(822): Illuminate\Routing\UrlGenerator->route('home_page', Array, true)
+#1 /home/mybusiu2/repository/mybusiness/storage/framework/views/6f91c577c7cfcd01dfc6a39ae862c90e3452755c.php(473): route('home_page')
+#2 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(43): include('/home/mybusiu2/...')
+#3 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(59): Illuminate\View\Engines\PhpEngine->evaluatePath('/home/mybusiu2/...', Array)
+#4 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/View/View.php(142): Illuminate\View\Engines\CompilerEngine->get('/home/mybusiu2/...', Array)
+#5 /home/mybusiu2/r in /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php on line 389
+[06-May-2019 14:21:22 UTC] PHP Warning:  Uncaught ErrorException: require(/home/mybusiu2/repository/mybusiness/routes/web.php): failed to open stream: No such file or directory in /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Routing/Router.php:417
+Stack trace:
+#0 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Routing/Router.php(417): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require(/home/m...', '/home/mybusiu2/...', 417, Array)
+#1 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Routing/Router.php(417): require()
+#2 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Routing/Router.php(373): Illuminate\Routing\Router->loadRoutes('/home/mybusiu2/...')
+#3 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Routing/RouteRegistrar.php(121): Illuminate\Routing\Router->group(Array, '/home/mybusiu2/...')
+#4 /home/mybusiu2/repository/mybusiness/app/Providers/RouteServiceProvider.php(56): Illumin in /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Routing/Router.php on line 417
+[06-May-2019 14:21:22 UTC] PHP Fatal error:  Illuminate\Routing\Router::loadRoutes(): Failed opening required '/home/mybusiu2/repository/mybusiness/routes/web.php' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Routing/Router.php on line 417
+[06-May-2019 14:21:22 UTC] PHP Fatal error:  Uncaught InvalidArgumentException: Route [home_page] not defined. in /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:389
+Stack trace:
+#0 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(822): Illuminate\Routing\UrlGenerator->route('home_page', Array, true)
+#1 /home/mybusiu2/repository/mybusiness/storage/framework/views/6f91c577c7cfcd01dfc6a39ae862c90e3452755c.php(473): route('home_page')
+#2 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(43): include('/home/mybusiu2/...')
+#3 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(59): Illuminate\View\Engines\PhpEngine->evaluatePath('/home/mybusiu2/...', Array)
+#4 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/View/View.php(142): Illuminate\View\Engines\CompilerEngine->get('/home/mybusiu2/...', Array)
+#5 /home/mybusiu2/r in /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php on line 389
+[06-May-2019 14:21:24 UTC] PHP Warning:  Uncaught ErrorException: require(/home/mybusiu2/repository/mybusiness/routes/web.php): failed to open stream: No such file or directory in /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Routing/Router.php:417
+Stack trace:
+#0 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Routing/Router.php(417): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require(/home/m...', '/home/mybusiu2/...', 417, Array)
+#1 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Routing/Router.php(417): require()
+#2 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Routing/Router.php(373): Illuminate\Routing\Router->loadRoutes('/home/mybusiu2/...')
+#3 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Routing/RouteRegistrar.php(121): Illuminate\Routing\Router->group(Array, '/home/mybusiu2/...')
+#4 /home/mybusiu2/repository/mybusiness/app/Providers/RouteServiceProvider.php(56): Illumin in /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Routing/Router.php on line 417
+[06-May-2019 14:21:24 UTC] PHP Fatal error:  Illuminate\Routing\Router::loadRoutes(): Failed opening required '/home/mybusiu2/repository/mybusiness/routes/web.php' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Routing/Router.php on line 417
+[06-May-2019 14:21:24 UTC] PHP Fatal error:  Uncaught InvalidArgumentException: Route [home_page] not defined. in /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:389
+Stack trace:
+#0 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(822): Illuminate\Routing\UrlGenerator->route('home_page', Array, true)
+#1 /home/mybusiu2/repository/mybusiness/storage/framework/views/6f91c577c7cfcd01dfc6a39ae862c90e3452755c.php(473): route('home_page')
+#2 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(43): include('/home/mybusiu2/...')
+#3 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(59): Illuminate\View\Engines\PhpEngine->evaluatePath('/home/mybusiu2/...', Array)
+#4 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/View/View.php(142): Illuminate\View\Engines\CompilerEngine->get('/home/mybusiu2/...', Array)
+#5 /home/mybusiu2/r in /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php on line 389
+[06-May-2019 14:21:26 UTC] PHP Warning:  Uncaught ErrorException: require(/home/mybusiu2/repository/mybusiness/routes/web.php): failed to open stream: No such file or directory in /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Routing/Router.php:417
+Stack trace:
+#0 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Routing/Router.php(417): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require(/home/m...', '/home/mybusiu2/...', 417, Array)
+#1 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Routing/Router.php(417): require()
+#2 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Routing/Router.php(373): Illuminate\Routing\Router->loadRoutes('/home/mybusiu2/...')
+#3 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Routing/RouteRegistrar.php(121): Illuminate\Routing\Router->group(Array, '/home/mybusiu2/...')
+#4 /home/mybusiu2/repository/mybusiness/app/Providers/RouteServiceProvider.php(56): Illumin in /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Routing/Router.php on line 417
+[06-May-2019 14:21:26 UTC] PHP Fatal error:  Illuminate\Routing\Router::loadRoutes(): Failed opening required '/home/mybusiu2/repository/mybusiness/routes/web.php' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Routing/Router.php on line 417
+[06-May-2019 14:21:26 UTC] PHP Fatal error:  Uncaught InvalidArgumentException: Route [home_page] not defined. in /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:389
+Stack trace:
+#0 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(822): Illuminate\Routing\UrlGenerator->route('home_page', Array, true)
+#1 /home/mybusiu2/repository/mybusiness/storage/framework/views/6f91c577c7cfcd01dfc6a39ae862c90e3452755c.php(473): route('home_page')
+#2 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(43): include('/home/mybusiu2/...')
+#3 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(59): Illuminate\View\Engines\PhpEngine->evaluatePath('/home/mybusiu2/...', Array)
+#4 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/View/View.php(142): Illuminate\View\Engines\CompilerEngine->get('/home/mybusiu2/...', Array)
+#5 /home/mybusiu2/r in /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php on line 389
+[06-May-2019 14:21:27 UTC] PHP Fatal error:  Uncaught InvalidArgumentException: Route [home_page] not defined. in /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:389
+Stack trace:
+#0 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(822): Illuminate\Routing\UrlGenerator->route('home_page', Array, true)
+#1 /home/mybusiu2/repository/mybusiness/storage/framework/views/6f91c577c7cfcd01dfc6a39ae862c90e3452755c.php(473): route('home_page')
+#2 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(43): include('/home/mybusiu2/...')
+#3 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(59): Illuminate\View\Engines\PhpEngine->evaluatePath('/home/mybusiu2/...', Array)
+#4 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/View/View.php(142): Illuminate\View\Engines\CompilerEngine->get('/home/mybusiu2/...', Array)
+#5 /home/mybusiu2/r in /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php on line 389
+[06-May-2019 14:21:27 UTC] PHP Fatal error:  Uncaught InvalidArgumentException: Route [home_page] not defined. in /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:389
+Stack trace:
+#0 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(822): Illuminate\Routing\UrlGenerator->route('home_page', Array, true)
+#1 /home/mybusiu2/repository/mybusiness/storage/framework/views/6f91c577c7cfcd01dfc6a39ae862c90e3452755c.php(473): route('home_page')
+#2 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(43): include('/home/mybusiu2/...')
+#3 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(59): Illuminate\View\Engines\PhpEngine->evaluatePath('/home/mybusiu2/...', Array)
+#4 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/View/View.php(142): Illuminate\View\Engines\CompilerEngine->get('/home/mybusiu2/...', Array)
+#5 /home/mybusiu2/r in /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php on line 389
+[13-Jun-2019 20:43:47 UTC] PHP Warning:  Uncaught ErrorException: require(/home/mybusiu2/repository/mybusiness/routes/web.php): failed to open stream: No such file or directory in /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Routing/Router.php:417
+Stack trace:
+#0 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Routing/Router.php(417): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require(/home/m...', '/home/mybusiu2/...', 417, Array)
+#1 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Routing/Router.php(417): require()
+#2 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Routing/Router.php(373): Illuminate\Routing\Router->loadRoutes('/home/mybusiu2/...')
+#3 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Routing/RouteRegistrar.php(121): Illuminate\Routing\Router->group(Array, '/home/mybusiu2/...')
+#4 /home/mybusiu2/repository/mybusiness/app/Providers/RouteServiceProvider.php(56): Illumin in /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Routing/Router.php on line 417
+[13-Jun-2019 20:43:47 UTC] PHP Fatal error:  Illuminate\Routing\Router::loadRoutes(): Failed opening required '/home/mybusiu2/repository/mybusiness/routes/web.php' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Routing/Router.php on line 417
+[13-Jun-2019 20:43:52 UTC] PHP Warning:  Uncaught ErrorException: require(/home/mybusiu2/repository/mybusiness/routes/web.php): failed to open stream: No such file or directory in /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Routing/Router.php:417
+Stack trace:
+#0 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Routing/Router.php(417): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require(/home/m...', '/home/mybusiu2/...', 417, Array)
+#1 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Routing/Router.php(417): require()
+#2 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Routing/Router.php(373): Illuminate\Routing\Router->loadRoutes('/home/mybusiu2/...')
+#3 /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Routing/RouteRegistrar.php(121): Illuminate\Routing\Router->group(Array, '/home/mybusiu2/...')
+#4 /home/mybusiu2/repository/mybusiness/app/Providers/RouteServiceProvider.php(56): Illumin in /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Routing/Router.php on line 417
+[13-Jun-2019 20:43:52 UTC] PHP Fatal error:  Illuminate\Routing\Router::loadRoutes(): Failed opening required '/home/mybusiu2/repository/mybusiness/routes/web.php' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/mybusiu2/repository/mybusiness/vendor/laravel/framework/src/Illuminate/Routing/Router.php on line 417

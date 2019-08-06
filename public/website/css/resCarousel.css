@@ -1,0 +1,252 @@
+/*resCarousel Css*/
+
+.outt {
+    display: none;
+}
+
+.leftRs {
+    color: #fff;
+    font-weight: bold;
+    background-color: #333;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    z-index: 6;
+    left: 20px;
+    width: 41px;
+    height: 40px;
+    box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, .3);
+    border-radius: 5px;
+}
+.leftRs:lang(ar)  {
+ right: 20px;
+	left:auto;
+}
+.rightRs {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 20px;
+    bottom: 0;
+    z-index: 6;
+    width: 40px;
+    height: 40px;
+    box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, .3);
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+.rightRs:lang(ar) {
+    right: auto;
+	left:20px;
+
+}
+.resCarousel {
+    /*float: left;
+    overflow: hidden;*/
+    width: 100%;
+    position: relative;
+}
+
+.resCarousel-inner {
+    overflow-x: hidden;
+    white-space: nowrap;
+    font-size: 0;
+    vertical-align: top;
+}
+
+.resCarousel-inner .item {
+    display: inline-block;
+    font-size: 14px;
+    white-space: initial;
+}
+
+
+/*banner*/
+
+.banner {
+    overflow: hidden !important;
+}
+
+
+/*tile css*/
+
+.resCarousel-inner .item .tile {
+    background: white;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    margin: 20px 10px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+
+/*animation*/
+
+.resCarousel[data-animator="lazy"] .item {
+    transition: .6s ease all;
+}
+
+@media (max-width: 767px) {
+    .leftRs,
+    .rightRs {
+        /*display: none;*/
+    }
+    .resCarousel-inner {
+        /* overflow-x: auto; */
+    }
+}
+.padding-slider{
+	padding-left: 80px;
+}
+
+.padding-slider:lang(ar){
+	padding-left: 0px;
+		padding-right: 80px;
+
+}
+
+
+.padding-slider .leftRs{
+	left: -55px;
+	top: 21px;
+	right:auto;
+	bottom:auto;
+}
+
+.padding-slider .leftRs:lang(ar){
+	right: -55px;
+	left:auto;
+}
+
+
+
+
+.padding-slider .rightRs{
+		left: -54px;
+		top: 69px;
+		right:auto;
+		bottom:auto;
+}
+
+
+.padding-slider .rightRs:lang(ar){
+		right: -54px;
+		left:auto;
+}
+
+
+
+
+.padding-div{
+	padding: 0px 20px 3px 20px;
+	border-radius: 0px 0px 5px 5px;
+}
+.padding-div:lang(ar){
+	direction:rtl;
+}
+
+
+
+
+.padding-div-2{
+		padding: 0px 20px 3px 20px;
+	border-radius: 0px 0px 5px 5px;
+
+}
+.padding-div h3{height: 50px;overflow:hidden;color:#333;font-size: 20px;text-align: center;margin-top: 10px;}
+.padding-div-2 h3{height:30px;overflow:hidden;color:#333;font-size: 20px;text-left: center;margin-top: 10px;}
+.padding-div p{/* height:40px; */overflow:hidden;color:#333;}
+
+.padding-div-2 p{/* height:40px; */overflow:hidden;color:#333;}
+.heart-div{
+	text-align: center;
+	width:50px;
+	background-color:rgba(0,0,0,.7);
+	padding:5px;
+	color:#fff;
+	position:absolute;
+	right:20px;
+	top:20px;
+	border-radius:5px;
+}
+.item-ex a, .item-co a{
+display:block
+}
+
+.logo-company{
+	width: 140px;
+	height: 140px;
+	/* border: 6px solid rgba(255,255,255,0.4); */
+	z-index:3;
+	margin: -83px auto 0px auto;
+	border-radius: 20px;
+	box-shadow: 0px 0px 11px #b3b3b3;
+	background-color: #fff;
+}
+
+
+.logo-company-2{
+	width: 80px;
+	height: 80px;
+	border: 6px solid rgba(255,255,255,0.4);
+	z-index:3;
+	/* margin: -111px 0px 0px 27px; */
+	position: absolute;
+	bottom: 16px;
+	left: 12px;
+	border-radius: 16px;
+}
+.logo-company-2:lang(ar){
+		left: 0px;
+		right: 12px;
+
+}
+.title-co{
+	padding:5px;
+	box-shadow: 0px 0px 0px 4px rgba(255,255,255,0.4);
+	position:absolute;
+	bottom: -14px;
+	left: 14px;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 16px;
+	max-width: 190px;
+	overflow: hidden;
+	height: 36px;
+}
+
+.address-co{
+	margin-top:10px;
+	border-top:1px solid #CCC;
+	/* margin-bottom: 10px; */
+}
+.address-co p{
+	padding-top: 12px;
+	height: 31px;
+	overflow:hidden;
+	color:#949292;
+}
+
+.img-client{
+	height: 170px;
+	width:100%;
+}
+/*resCarousel Css End*/
+
+
+.item{
+padding:5px;
+}
+
+.home-slider a{
+	display:block;
+	width: 100%;
+}
+.home-slider a:focus{
+	outline:none;
+}
+
+.tile{
+border:1px solid #eee;
+border-radius: 5px;
+}

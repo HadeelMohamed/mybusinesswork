@@ -1,0 +1,134 @@
+/*----- font-family Cairo-Regular -----*/
+ @font-face {
+     font-family:'Cairo-Regular';
+     src: url('../fonts/Cairo-Regular.ttf');
+     src: url('../fonts/Cairo-Regular.ttf') format('truetype'), url('../fonts/Cairo-Regular.eot') format('embedded-opentype'), url("../fonts/Cairo-Regular.otf") format("opentype"), url('../fonts/Cairo-Regular.woff') format('woff'), url('../fonts/Cairo-Regular.svg') format('svg');
+}
+/*----- / font-family Cairo-Regular -----*/
+/* ------ Pages styles start ------ */
+/*my-business-project-header-page-styles-start */
+ .my-business-project-header-page .logo-nav-div:lang(ar){
+     float: right;
+     border-left: 1px solid #989898;
+     border-right:none;
+}
+ .my-business-project-header-page .menu-with-out-logo:lang(ar){
+     display: flex;
+     margin-right: auto;
+}
+ .my-business-project-header-page .search-menu-form .header-search-icon:lang(ar) {
+     left: 10px;
+}
+ .my-business-project-header-page .navbar-nav .login-li:lang(ar){
+     padding-right:10px;
+     padding-left:5px;
+     margin-left: 10px;
+     border-right:1px solid #989898;
+}
+ .my-business-project-header-page .navbar-nav .or-word-class:lang(ar){
+     padding-left: 15px;
+     font-size: 15px;
+}
+ .my-business-project-header-page .header-login-button:lang(ar){
+     margin-left: 15px;
+}
+/* /my-business-project-header-page-styles-end*/
+/*my-business-project-footer-page-styles-start */
+ .my-business-project-footer-page .footer-ul li:lang(ar) {
+     border-left: 1px solid #fff;
+}
+ .my-business-project-footer-page .footer-ul li:last-child:lang(ar) {
+     border-left: none;
+}
+ .my-business-project-footer-page .social-media-div:lang(ar){
+     float: left;
+}
+/*/
+my-business-project-footer-page-styles-end */
+/*my-business-home-page-styles-start */
+/*/my-business-home-page-styles-end */
+/*my-business-auction-form-page-styles-start*/
+/*/my-business-auction-form-page-styles-end*/
+/* ------ / Pages styles end ------ */
+/* ------ Responsive media query start ------ */
+/* ---- media only screen and (width: 1024px) start---- */
+ @media only screen and (width: 1024px) {
+}
+/* ---- / media only screen and (width: 1024px) end---- */
+/* ---- media only screen and (min-width: 768px) and (max-width: 1024px) start---- */
+ @media only screen and (min-width: 768px) and (max-width: 1024px) {
+}
+/* ---- / media only screen and (min-width: 768px) and (max-width: 1024px) end---- */
+/* ---- media query (max-width: 768 px ) start ---- */
+ @media(max-width:768px){
+     .my-business-project-header-page .logo-nav-div:lang(ar) {
+         padding-right: 0px;
+         padding-left: 30px;
+         margin-right: 0px;
+    }
+     .my-business-project-header-page .search-menu-form .header-search-icon:lang(ar) {
+         left: 10px;
+    }
+     .my-business-project-header-page .home-nav-ul-text:lang(ar) {
+         left: 0px;
+         right: auto !important;
+         top: 75px;
+    }
+     .my-business-project-header-page .home-nav-ul-text ul li:lang(ar) {
+         border-right: none !important;
+    }
+     .my-business-project-header-page .mobile-header-search-icon:lang(ar){
+         margin-right: -80px;
+    }
+     .my-business-project-header-page .country-dropdown:lang(ar) {
+         margin-left: -55px;
+    }
+     .my-business-project-header-page .country-dropdown .nav-link:lang(ar) {
+         left: -60px;
+    }
+     .my-business-project-header-page .profile-info .nav-link:lang(ar) {
+         margin-right: -65px;
+    }
+    /* / my-business-project-header-page-styles-end*/
+    /*my-business-project-footer-page-styles-start */
+     .my-business-project-footer-page .footer-ul li:lang(ar) {
+         border-left: none;
+    }
+     .my-business-project-footer-page .mony-pay-div:lang(ar) {
+         text-align: center;
+    }
+     .my-business-project-footer-page .social-media-div:lang(ar){
+         float: none;
+         text-align: center;
+    }
+    /*/my-business-project-footer-page-styles-end*/
+    /*my-business-home-page-styles-start */
+    /*login modal start*/
+     .login-modal-class .social-media-buttons a {
+         width: 100%;
+    }
+     .login-modal-class .login-register-tab .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link {
+         background-color: #eee;
+         color: #494949;
+         padding: 10px 15px;
+    }
+    /* / login modal end*/
+    /*/
+     my-business-home-page-styles-end*/
+}
+/* ---- / media query (max-width: 768 px ) end---- */
+/* ---- media query (max-width: 500 px ) start ---- */
+ @media(max-width:500px){
+}
+/* ---- / media query (max-width: 500 px ) end---- */
+/* ---- media query (max-width: 321 px ) start---- */
+ @media(max-width:321px){
+}
+/* ---- / media query (max-width: 321 px ) end---- */
+/* ------ / Responsive media query end ------ */
+   /* ---- / error span--- */
+
+ .error {
+  color: red;
+  font-size: 12px;
+}

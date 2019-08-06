@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <script src="https://test-nbkpayment.mtf.gateway.mastercard.com/checkout/version/52/checkout.js"
+                data-error="errorCallback"
+                data-cancel="cancelCallback">
+        </script>
+
+        <script type="text/javascript">
+            function errorCallback(error) {
+                  console.log(JSON.stringify(error));
+            }
+            function cancelCallback() {
+                  console.log('Payment cancelled');
+            }
+
+
+ Checkout.configure({
+    merchant   : '900188001',
+    order      : {
+        amount     : function () { //Dynamic calculation of amount
+            return 30
+        },
+        currency   : 'KWD',
+        description: 'Ordered goods',
+        id: 'INBU018807'
+    },
+ 
+   
+    interaction: {
+       
+     operation: 'PURCHASE', // set this field to 'PURCHASE' for Hosted Checkout to perform a Pay Operation. // AUTHORIZE
+                    merchant: {
+                        name: 'INTERNATIONAL BUSINESS GROUP CO W L L',
+                        address: {
+                            line1: '200 Sample St',
+                            line2: '1234 Example Town'            
+                        }
+                    }, 
+        displayControl: {
+            orderSummary        : 'SHOW',
+            paymentConfirmation : 'SHOW',
+            billingAddress  : 'OPTIONAL',
+            customerEmail       : 'OPTIONAL',
+            shipping            : 'HIDE'
+        }
+    }
+}); 
+           
+        </script>
+    </head>
+    <body>
+        
+        <input type="button" value="Pay with Lightbox" onclick="Checkout.showLightbox();" />
+        <input type="button" value="Pay with Payment Page" onclick="Checkout.showPaymentPage();" />
+    </body>
+</html>
+
+

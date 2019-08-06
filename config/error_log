@@ -1,0 +1,64 @@
+[27-Mar-2019 14:18:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/mybusiu2/new.mybusinessme.com/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/mybusiu2/new.mybusinessme.com/config/app.php on line 16
+[01-Apr-2019 22:05:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/mybusiu2/new.mybusinessme.com/config/broadcasting.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/mybusiu2/new.mybusinessme.com/config/broadcasting.php on line 18
+[02-Apr-2019 12:51:06 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/mybusiu2/new.mybusinessme.com/config/cache.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/mybusiu2/new.mybusinessme.com/config/cache.php on line 20
+[03-Apr-2019 03:21:20 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/mybusiu2/new.mybusinessme.com/config/hashing.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/mybusiu2/new.mybusinessme.com/config/hashing.php on line 32
+[03-Apr-2019 11:26:15 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/mybusiu2/new.mybusinessme.com/config/mail.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/mybusiu2/new.mybusinessme.com/config/mail.php on line 19
+[04-Apr-2019 14:02:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/mybusiu2/new.mybusinessme.com/config/services.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/mybusiu2/new.mybusinessme.com/config/services.php on line 18
+[04-Apr-2019 14:07:29 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/mybusiu2/new.mybusinessme.com/config/laravellocalization.php:322
+Stack trace:
+#0 {main}
+  thrown in /home/mybusiu2/new.mybusinessme.com/config/laravellocalization.php on line 322
+[06-Apr-2019 07:54:03 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/mybusiu2/new.mybusinessme.com/config/logging.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/mybusiu2/new.mybusinessme.com/config/logging.php on line 19
+[12-Apr-2019 20:18:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/mybusiu2/new.mybusinessme.com/config/cache.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/mybusiu2/new.mybusinessme.com/config/cache.php on line 20
+[12-Apr-2019 22:14:04 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/mybusiu2/new.mybusinessme.com/config/filesystems.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/mybusiu2/new.mybusinessme.com/config/filesystems.php on line 16
+[12-Apr-2019 22:24:11 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/mybusiu2/new.mybusinessme.com/config/logging.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/mybusiu2/new.mybusinessme.com/config/logging.php on line 19
+[13-Apr-2019 02:05:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/mybusiu2/new.mybusinessme.com/config/hashing.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/mybusiu2/new.mybusinessme.com/config/hashing.php on line 32
+[13-Apr-2019 07:19:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/mybusiu2/new.mybusinessme.com/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/mybusiu2/new.mybusinessme.com/config/app.php on line 16
+[13-Apr-2019 09:30:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/mybusiu2/new.mybusinessme.com/config/broadcasting.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/mybusiu2/new.mybusinessme.com/config/broadcasting.php on line 18
+[13-Apr-2019 14:39:12 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/mybusiu2/new.mybusinessme.com/config/hashing.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/mybusiu2/new.mybusinessme.com/config/hashing.php on line 32
+[14-Apr-2019 02:55:33 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/mybusiu2/new.mybusinessme.com/config/hashing.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/mybusiu2/new.mybusinessme.com/config/hashing.php on line 32

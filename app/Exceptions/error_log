@@ -1,0 +1,2 @@
+[11-Apr-2019 05:41:35 UTC] PHP Fatal error:  Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/mybusiu2/new.mybusinessme.com/app/Exceptions/Handler.php on line 8
+[17-Apr-2019 23:56:28 UTC] PHP Fatal error:  Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/mybusiu2/new.mybusinessme.com/app/Exceptions/Handler.php on line 8

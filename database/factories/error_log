@@ -1,0 +1,8 @@
+[11-Apr-2019 07:27:40 UTC] PHP Fatal error:  Uncaught Error: Call to a member function define() on null in /home/mybusiu2/new.mybusinessme.com/database/factories/UserFactory.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/mybusiu2/new.mybusinessme.com/database/factories/UserFactory.php on line 17
+[15-Apr-2019 21:19:57 UTC] PHP Fatal error:  Uncaught Error: Call to a member function define() on null in /home/mybusiu2/new.mybusinessme.com/database/factories/UserFactory.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/mybusiu2/new.mybusinessme.com/database/factories/UserFactory.php on line 17
