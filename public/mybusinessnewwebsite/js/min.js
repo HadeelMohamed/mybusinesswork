@@ -161,15 +161,15 @@ $(".resetDate").flatpickr({
 });
 //proceed modal script start
 
-$(document).ready(function () {
+// $(document).ready(function () {
 
-	$("#proceed-btn-id").click(function () {
+// 	$("#proceed-btn-id").click(function () {
 
-		$('#proceed-modal-div-id').modal('show');
+// 		$('#proceed-modal-div-id').modal('show');
 
-	});
+// 	});
 
-});
+// });
 
 
 //Validation modal in footer
@@ -324,6 +324,12 @@ $("#loginformodal").validate({
       error.insertAfter(element);
   }
 });
+
+
+///validate profile setting 
+
+
+
 
 });
 

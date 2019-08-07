@@ -4292,7 +4292,12 @@ display: inline-block;
 /* ---- / media query (max-width: 321 px ) end---- */
 /* ------ / Responsive media query end ------ */
  /* ---- / error span--- */
-  .error {
+  .span_error {
   color: red;
   font-size: 12px;
+}
+
+.has-error .select2-selection {
+    border: 1px solid #a94442;
+    border-radius: 4px;
 }

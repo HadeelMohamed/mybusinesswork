@@ -18,8 +18,6 @@ class RegistrationController extends Controller
 
    public function return_view_profile_setting()
    {
-   // dd(count(returnCode::getcodes()));
-
   
        return view('pages.website.profile_setting');
    }

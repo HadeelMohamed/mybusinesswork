@@ -1,4 +1,8 @@
 @include('partials.website.header')
+
+<?php  $lang_id=\App\Language::where('lang',\Lang::locale())->pluck('id')->first();
+$nationalities=\App\Nationality::whereHas('nationtrans', function ($query) use ($lang_id) {
+    $query->where('lang_id','=', $lang_id);})->get()?>
 <!--my-business-profile-setting-form-page start -->
 <section class="my-business-profile-setting-form-page  width-percent-100  ">
    <!--setting-form-section start -->
@@ -11,7 +15,7 @@
          </div>
          <div class="row">
             <!--setting-page-the-firest-of-form-section start-->
-            <form class="col-xl-12 col-lg-12 col-md-12 col-sm-12   setting-page-the-firest-of-form-section " id="profilesetting">
+            <form class="col-xl-12 col-lg-12 col-md-12 col-sm-12   setting-page-the-firest-of-form-section " id="profilesetting" name="profilesetting">
                <div class="row  margin-top-20 ">
                   <!--form item start-->
                   <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12  margin-top-20 ">
@@ -28,7 +32,9 @@
                         </label>
                         <input type="text" placeholder="DD / MM / YYYY"  data-input class="form-control my-business-input-style " name='date'>
                         <button class="input-button btn" title="clear" data-clear>clear</button>
+
                      </div>
+              
                      <!-- / form item end-->
                      <!--form item start-->
                      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 form-group margin-top-20 ">
@@ -36,11 +42,13 @@
                         <span>Gender</span>
                         <span class="my-business-red-font-color">*</span>
                         </label>
-                        <select id="setting-profile-gender-id" class="form-control my-business-select-style my-select" name='gender'>
+                        <select id="setting-profile-gender-id" class="form-control my-business-select-style my-select select2" name='gender'>
+                           <option >select gender</option>
                            <option value='0'>Male</option>
                            <option value='1'>Female</option>
                            
                         </select>
+                        
                      </div>
                      <!-- / form item end-->
                      <!--form item start-->
@@ -49,11 +57,14 @@
                         <span>Nationallity</span>
                         <span class="my-business-red-font-color">*</span>
                         </label>
-                        <select id="setting-profile-nationallity-id" class="form-control selec-two-class" name='nationallity'>
+                        <select id="setting-profile-nationallity-id" class="form-control selec-two-class select2" name='nationallity'>
                            <option selected>Choose your nationallity</option>
-                           <option>nationallity</option>
-                           <option>nationallity</option>
-                           <option>nationallity</option>
+                              @foreach($nationalities as $nationality)
+                        <option value="{{ $nationality->id }}" >{{ $nationality->nationtrans[0]->name }}</option>
+
+               @endforeach
+                           
+                          
                         </select>
                      </div>
                      <!-- / form item end-->                     
@@ -65,9 +76,11 @@
                         </label>
                         <select id="setting-profile-country-id" class="form-control selec-two-class" name='country'>
                            <option selected>Choose your country</option>
-                           <option>country</option>
-                           <option>country</option>
-                           <option>country</option>
+                                   @foreach(App\Country::all() as $country)
+                        <option value="{{ $country->id }}" >{{ $country->name }}</option>
+
+               @endforeach
+                           
                         </select>
                      </div>
                      <!-- / form item end-->                     
@@ -78,10 +91,12 @@
                         <span class="my-business-red-font-color">*</span>
                         </label>
                         <select id="setting-profile-phone-id" class="form-control selec-two-class" name='code'>
-                           <option selected>+020</option>
-                           <option>+020</option>
-                           <option>+020</option>
-                           <option>+020</option>
+                          
+           @foreach(App\Code\returnCode::getcodes() as $key => $value)
+                        <option value="{{ $key }}" >+0{{ $key }}</option>
+
+               @endforeach
+                           
                         </select>
                         <input type="tel" class="form-control my-business-input-style " id="setting-profile-phone-id" placeholder="" name='telephone'>
                         <button class="btn  my-business-button-style hvr-pulse-shrink" id="phone-verfication-modal"  data-toggle="modal" data-target="#verfiy-phone-modal-div-id">
@@ -154,7 +169,7 @@
    <div class="modal-dialog" role="document">
       <div class="modal-content">
          <div class="modal-header">
-            <img class="modal-title" id="" src="../img/Trans5.png" width="150px" height="auto" />
+            <img class="modal-title" id="" src="{{asset('mybusinessnewwebsite/img/Trans5.png')}}" width="150px" height="auto" />
          </div>
          <div class="modal-body">
             <!--form item start-->
@@ -194,7 +209,7 @@
    <div class="modal-dialog" role="document">
       <div class="modal-content">
          <div class="modal-header">
-            <img class="modal-title" id="" src="../img/Trans5.png" width="150px" height="auto" />
+            <img class="modal-title" id="" src="{{asset('mybusinessnewwebsite/img/Trans5.png')}}" width="150px" height="auto" />
             <button type="button" class="close" data-dismiss="modal">&times;</button>
          </div>
          <div class="modal-body">
@@ -230,5 +245,7 @@
       </div>
    </div>
 </div>
+
+
 <!-- / proceed modal end-->
 @include('partials.website.footer')
