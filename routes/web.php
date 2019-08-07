@@ -448,6 +448,8 @@ Route::get ( '/redirect/{service}', 'Website\\SocialAuthController@redirect' );
 Route::get ( '/callback/{service}', 'Website\\SocialAuthController@callback' );
 
 Route::post ('checkEmailUser', 'Website\\AjaxController@checkEmailUser' )->name('checkEmailUser');
+Route::post ('getjobtitle', 'Website\\AjaxController@getjobtitle' )->name('getjobtitle');
+
 
 Route::post('/registermodal', 'Website\\RegistrationController@store')->name('registermodal');
                     
@@ -465,4 +467,6 @@ Route::group(
 
 
 Route::any('/profile_setting', 'Website\\RegistrationController@return_view_profile_setting')->name('profile_setting');
+
+Route::post('/Registration_personal', 'Website\\RegistrationTypeController@Registration_personal')->name('Registration_personal');
                     });

@@ -11,6 +11,8 @@ use Illuminate\Support\Facades\Hash;
 Use App\Language;
 use App\Code\returnCode;
 use App\Nationality;
+use App\JobCategory;
+use App\JobTitle;
 class RegistrationController extends Controller
 
 {
@@ -18,6 +20,7 @@ class RegistrationController extends Controller
 
    public function return_view_profile_setting()
    {
+
   
        return view('pages.website.profile_setting');
    }
@@ -28,7 +31,7 @@ class RegistrationController extends Controller
 
        $lang_id=Language::where('lang',\Lang::locale())->pluck('id')->first();
 
-
+$slug=preg_replace('/\s+/', '-', strtolower($request->firstname));
 
       $user=User::create([
              //'name' => $request->firstname,
@@ -44,7 +47,7 @@ class RegistrationController extends Controller
       
 
      // If you already have a question and want to add a new answer.
-$user->memberlang()->create(['lang_id' =>$lang_id,'member_id'=> $userdetails->id,'name'=>$request->firstname]);
+$user->memberlang()->create(['lang_id' =>$lang_id,'member_id'=> $userdetails->id,'name'=>$request->firstname,'slug'=>$slug]);
       auth()->login($user);
 
 return redirect()->route('profile_setting');

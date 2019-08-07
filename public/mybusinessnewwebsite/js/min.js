@@ -66,12 +66,12 @@ function GetFileSize() {
 
 			var fsize = fi.files.item(i).size;
 
-			if (fsize > 2097152) {
+			// if (fsize > 2097152) {
 
-				alert('image size > 2M');
-				$('#logo_preview').empty();
-				$('#logo-btn').val('');
-			}
+			
+			// 	$('#logo_preview').empty();
+			// 	$('#logo-btn').val('');
+			// }
 
 		}
 	}
@@ -324,14 +324,12 @@ $("#loginformodal").validate({
       error.insertAfter(element);
   }
 });
+});
 
 
 ///validate profile setting 
 
 
-
-
-});
 
 //append slud in regsiter modal in header
   $(document).ready(function(){
@@ -403,3 +401,141 @@ else
   })
   }
 });
+
+$(document).ready(function () {
+$("#setting-profile-nationallity-id").select2({
+    placeholder: "Select your nationality"
+    });
+
+$("#setting-profile-country-id").select2({
+    placeholder: "Select your country"
+    });
+
+$("#setting-profile-phone-id").select2({
+    placeholder: "code"
+    });
+$("#setting-profile-gender-id").select2({
+  placeholder: "Select your gender",
+      minimumResultsForSearch: -1
+
+  });
+
+$("#setting-profile-job-category-id").select2({
+    placeholder: "Select your job category"
+    });
+
+$("#setting-profile-job-title-id").select2({
+    placeholder: "Select your job title"
+    });
+
+
+
+$.validator.addMethod('filesize', function (value, element, param) {
+    return this.optional(element) || (element.files[0].size <= param)
+}, 'File size must be less than {0}');
+
+  $("#profilesetting").validate({
+  ignore: [],       
+  rules: {
+
+       date :
+    {
+    
+    required:true,
+    },
+      nationallity :
+    {
+    
+    required:true,
+    },
+
+       country :
+    {
+    
+    required:true,
+    },
+
+        code :
+    {
+    
+    required:true,
+    },
+
+         telephone :
+    {
+    
+    required:true,
+    minlength:10,
+    maxlength:10
+    },
+
+           zip :
+    {
+    
+   
+    number: true,
+    },
+
+ 
+     logo: {
+                required: true,
+                accept: "jpg,jpeg,png",
+                filesize: 1000*1024,
+            },
+
+      gender :
+    {
+    
+    required:true,
+    },
+    
+  },
+  messages: {
+         logo: {
+      filesize:"file size must be less than 2M",
+      
+},
+  }
+});
+
+  $('#proceed-btn-id').click(function() {
+
+if($("#profilesetting").validate().form())
+{
+$('#proceed-modal-div-id').modal('show');
+
+$('#proceed-modal-div-idsubmit').on('click', function(e){
+    e.preventDefault();
+   $("#profilesetting").submit();
+})
+
+}
+ 
+
+  });
+});
+
+
+$(document).ready(function(){
+    $('#setting-profile-job-category-id').on('change', function(){
+     
+        var jobcategoryID = $(this).val();
+        if(jobcategoryID){
+            $.ajax({
+              headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+                type:'POST',
+                url:'/getjobtitle',
+                data:'jobcategoryID='+jobcategoryID,
+                success:function(html){
+                
+                    $('#setting-profile-job-title-id').html(html);
+                    
+                }
+            }); 
+        }
+    });
+
+
+    });

@@ -185,6 +185,8 @@
 
 <!-- /my-business-project project Libraries -->
 <script src="{{asset('mybusinessnewwebsite/js/jquery.validate.js')}}"></script>
+<script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
+<script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
 <!-- /jquery validation-->
 <!-- custome js file  -->
 <script src="{{asset('mybusinessnewwebsite/js/min.js')}}"></script>
