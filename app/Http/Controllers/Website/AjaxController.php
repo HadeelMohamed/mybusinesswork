@@ -41,7 +41,7 @@ $lang_id=\App\Language::where('lang',\Lang::locale())->pluck('id')->first();
  if(count($querygetjobtitle) >0){ 
        
         foreach($querygetjobtitle as $query){  
-            echo '<option value="'.$query->jobtitle_id.'">'.$query->name.'</option>'; 
+            echo '<option value="'.$query->id.'">'.$query->name.'</option>'; 
         } 
     }else{ 
         echo '<option value="">Jobtitle not available</option>'; 

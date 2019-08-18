@@ -1,51 +1,26 @@
-@extends('layouts.website')
-
-@section('content')
-<style type="text/css">
-  #dd{
-    border: 1px solid red;
-  }
-</style>
-<style>
-.inline-facts-wrap{
-                    border-radius:10px;
-                    padding:10px;
-                    margin-top:10px;
-                  }
-</style>
-<br>
-<br>
-<br>
-<br>
-<br><br>
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">@lang('website.please_verify_your_email_address')</div>
-
-                <div class="card-body">
-                    @if (session('resent'))
-                        <div class="alert alert-success" role="alert">
-                            @lang('website.a_fresh_verification_link_has_been_sent_to_your_email_address')
+@include('partials.website.header')
+    <!--my-business-confirmation-register-page start -->
+    <section class="my-business-confirmation-register-page width-percent-100  ">
+        <!--confirmation-register-section start -->
+        <div class="confirmation-register-section width-percent-100  ">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                        <div class="width-percent-60 margin-auto mail-div">
+                            <img src="{{asset('mybusinessnewwebsite/img/email-photo.svg')}}" alt="my business image" width="100%" height="100%" />
                         </div>
-                    @endif
-
-                    @lang('website.thanks_for_getting_started_with_mybusiness').
-                    @lang('website.before_proceeding'), @lang('website.please_check_your_email_for_verification_link'): <a href="{{ route('verification.resend') }}">@lang('website.click_here_to_request_another_one')</a>
+                        <h1 class="font-weight-bold margin-top-20">So far so good !!!</h1>
+                        <p class="text-center margin-top-15">
+                            <span class="display-block font-15 font-weight-bold grey-font-color">A confirmation email has been sent , please go to your inbox now. </span>
+                            <span class="display-block font-15 font-weight-bold grey-font-color">Open the email titled with "please confirm my business email account" , then click the link to verify.</span>
+                        </p>
+                        <a href="{{ route('verification.resend') }}" class="nav-link font-15 text-center  font-weight-bold">Click here to resend aconfirmation email again</a>
+                    </div>
                 </div>
+
             </div>
         </div>
-    </div>
-</div>
-
-<script src="{{asset('/website/js/jquery-2.1.1.js')}}" ></script>
-<script src="{{asset('/website/js/popper.min.js')}}" ></script>
-<script src="{{asset('/website/js/bootstrap.min.js')}}" ></script>
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-<script src="{{asset('/website/js/hc-offcanvas-nav.js')}}"></script>
-<script src="{{asset('/website/js/respnsive-menu.js')}}"></script>
-<script src="{{asset('/website/js/my-js.js')}}" ></script>
-
-@endsection
-
+        <!--/confirmation-register-section end-->
+    </section>
+    <!--/my-business-confirmation-register-page end-->
+@include('partials.website.footer')

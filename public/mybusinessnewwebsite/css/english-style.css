@@ -107,8 +107,8 @@ body {
 }
 
 p {
-  margin-top: 0px !important;
-  margin-bottom: 0px !important;
+  margin-top: 0px;
+  margin-bottom: 0px ;
 }
 /*hr*/
 hr {
@@ -118,6 +118,7 @@ hr {
 
 a:hover {
   text-decoration: none;
+  color: #e60000;
 }
 /*/general style reset end*/
 /* ------ Pages styles start ------ */
@@ -126,7 +127,7 @@ a:hover {
   background-color: #e60000;
   color: #fff;
   border-radius: 30px;
-  padding: 5px 20px;
+  padding: 7px 20px;
   box-shadow: 0 4px 8px 0 rgba(105, 105, 105, 0.2), 0 6px 15px 0 rgba(105, 105, 105, 0.2);
   float: right;
   margin-bottom: 15px !important;
@@ -135,21 +136,21 @@ a:hover {
 .my-business-text-area-style {
   border-radius: 6px;
   background-color: #f9f9f9;
-  padding: 5px 15px;
+  padding: 10px 15px;
   resize: none;
 }
 
 .my-business-input-style {
   border-radius: 6px;
   background-color: #f9f9f9 !important;
-  padding: 5px 15px;
+  padding: 10px 15px;
   resize: none;
   width: 80%;
 }
 .my-business-select-style {
   border-radius: 6px;
   background-color: #f9f9f9;
-  padding: 5px 15px;
+  padding: 10px 15px;
   resize: none;
   width: 80%;
 }
@@ -157,7 +158,7 @@ a:hover {
 .select2-container--default .select2-selection--single {
   border-radius: 6px !important;
   background-color: #f9f9f9;
-  padding: 15px 15px !important;
+  padding: 22px 15px !important;
   border: 1px solid #ced4da;
 }
 
@@ -412,6 +413,7 @@ a:hover {
   left: 0px;
   right: 0px;
   text-align: center;
+ padding-inline-start: 0px;
 }
 
 .my-business-project-footer-page .footer-ul li {
@@ -819,17 +821,17 @@ a:hover {
   display: inline-block;
 }
 .my-business-profile-setting-form-page .resetDate button{
-	background-color: #e60000;
-	display: inline-block;
-	color: #fff;
-	margin-top: -4px;
-	padding: 4px 10px;
+  background-color: #e60000;
+  display: inline-block;
+  color: #fff;
+  margin-top: -4px;
+  padding: 4px 10px;
 }
 .my-business-profile-setting-form-page .resetDate .my-business-input-style{
 width: 70%;
 display: inline-block;
 
-	
+  
 }
 .flatpickr-month {
     height: 45px;
@@ -851,6 +853,365 @@ display: inline-block;
       margin: 0px 2px;
 }
 /*/my-business-profile-setting-form-page-styles-end*/
+/*my-business-business-info-page-styles-start*/
+.my-business-business-info-page {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+
+
+
+.my-business-business-info-page #company-regForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+
+.my-business-business-info-page #freelance-regForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+
+
+
+
+
+.my-business-business-info-page input.invalid {
+  background-color: #ffdddd;
+}
+
+
+.my-business-business-info-page .freelance-tab {
+  display: none;
+}
+.my-business-business-info-page .company-form-tab{
+
+  display: none;
+}
+
+ .my-business-business-info-page button:hover {
+  opacity: 0.8;
+}
+
+
+.my-business-business-info-page .freelanceStep {
+    height: 12px;
+    width: 60px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 20px;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+.my-business-business-info-page .freelanceStep.freelanceActive {
+  opacity: 1;
+}
+
+
+.my-business-business-info-page .freelanceStep.freelanceFinish {
+     background-color: #e60000;
+}
+.my-business-business-info-page .company-form-step {
+    height: 12px;
+    width: 60px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 20px;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+.my-business-business-info-page .company-form-step.active {
+  opacity: 1;
+}
+
+
+.my-business-business-info-page .company-form-step.finish {
+     background-color: #e60000;
+}
+.my-business-business-info-page .tab-next-button{
+        background-color: #e60000;
+    color: #fff;
+    border-radius: 30px;
+    padding: 5px 40px;
+    box-shadow: 0 4px 8px 0 rgba(105, 105, 105, 0.2), 0 6px 15px 0 rgba(105, 105, 105, 0.2);
+    float: right;
+    margin-bottom: 15px !important;
+    display: inline-block;
+}
+.my-business-business-info-page .tab-back-button{
+        background-color: #e60000;
+    color: #fff;
+    border-radius: 30px;
+    padding: 5px 40px;
+    box-shadow: 0 4px 8px 0 rgba(105, 105, 105, 0.2), 0 6px 15px 0 rgba(105, 105, 105, 0.2);
+    float: left;
+    margin-bottom: 15px !important;
+    display: inline-block;
+}
+.my-business-business-info-page .profile-settingphone-number-div .my-business-input-style {
+border-radius: 0px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    width: 45%;
+    display: inline-block;
+    padding: 8px 15px;
+    padding-bottom: 12px;
+    margin-left: -4px;
+}
+.my-business-business-info-page .profile-settingphone-number-div .select2-container {
+    width: 22% !important;
+    display: inline-block;
+}
+.my-business-business-info-page .profile-settingphone-number-div .select2-container--default .select2-selection--single {
+    border-radius: 0px !important;
+    border-top-left-radius: 6px !important;
+    border-bottom-left-radius: 6px !important;
+}
+.my-business-business-info-page .profile-settingphone-number-div .my-business-button-style {
+    float: none;
+    padding: 3px 20px;
+    border-radius: 20px;
+    margin-top: 13px;
+    display: block;
+    margin-left: 10px;
+}
+.my-business-business-info-page  .wrapper {
+  position: absolute;
+  left:0px;
+      width: 100%;
+}
+
+.my-business-business-info-page  .search-box {
+    width: 21%;
+  height: 59px;
+  position: relative;
+}
+
+.my-business-business-info-page  .soical-input-type {
+position: absolute;
+    top: 1px;
+    box-sizing: border-box;
+    width: 0px;
+    height: 36px;
+    outline: none;
+    font-size: 18px;
+    border: 1px solid #ced4da;
+    transition: all 0.8s ease;
+    z-index: 1;
+        border-radius: 6px;
+    background-color: #f9f9f9 !important;
+
+    
+}
+
+.my-business-business-info-page  .social-icon-animated-div {
+  position: absolute;
+  height: 38px;
+  width: 100%;
+  line-height: 38px;
+  text-align: center;
+  background: #e60000;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 26px;
+  color: #fff;
+  transition: all 0.8s ease;
+  z-index: 5;
+}
+.my-business-business-info-page .social-text-span {
+    display: none;
+}
+.my-business-business-info-page  .soical-input-type.active {
+    width: 84%;
+    left: 23%;
+}
+
+.my-business-business-info-page .social-icon-animated-div.animate {
+
+left:0px
+}
+.my-business-business-info-page .social-inkes-div {
+    padding-top: 10px;
+}
+.my-business-business-info-page .business-info-loction{
+    background-image: url(../img/mmmmmmm.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 359px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 23px;
+}
+
+.my-business-business-info-page .business-info-loction .location-text-input{
+      position: absolute;
+    bottom: 30px;
+    right: 30px;
+     z-index:3;
+}
+.my-business-business-info-page .business-info-loction .location-input-icon{
+      position: absolute;
+    bottom: 30px;
+    right: 40px;
+    z-index:5;  
+}
+.my-business-business-info-page .my-business-input-style{
+  width: 69%;
+}
+.my-business-business-info-page .select2-container {
+    width: 69% !important;
+}
+.my-business-business-info-page .business-info-loction .my-business-input-style {
+    width: 35%;
+}
+.my-business-business-info-page .item-upload {
+    border-radius: 5px;
+    position: relative;
+    width: 220px;
+    border: 1px solid #abaaaa;
+    overflow: hidden;
+    height: 220px;
+    text-align: center;
+    margin-bottom: 15px;
+    padding-top: 110px;
+    padding-bottom: 30px;    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.my-business-business-info-page .item-upload .profile-setting-upload-image-icon span {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: -20px;
+    bottom: 0px;
+    font-size: 130px;
+    text-align: center;
+    color: #abaaaa;
+}
+
+.my-business-business-info-page .individual-form-section .company-individual-links-classs{
+        text-align: center;
+       font-size: 35px;
+       color: #333;
+       display: block;
+      line-height: 40px;
+}
+.my-business-business-info-page .individual-form-section .company-individual-links-classs span:first-of-type{
+       color: #e60000;
+       font-size: 50px;
+       font-weight: bold;
+}
+.my-business-business-info-page .individual-form-section .company-individual-links-classs span:last-child{
+       color:#333;
+       font-size: 30px;
+       margin-bottom: 10px;
+       font-weight: bold;
+}
+.my-business-business-info-page .company-individual-links-classs-mother-div {
+border: 1px solid #dfdfdf;
+    border-radius: 5px;
+    padding: 40px 7px;
+    display: block;
+    width: 78%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 17px;
+    color: #333;
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(195, 195, 195, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.my-business-business-info-page .individual-form-section .company-individual-links-classs:hover{
+color: #e60000;
+}
+.my-business-business-info-page .collapse-location-icon{
+  position: absolute;
+    right: 35%;
+    top: 10px;
+}
+.my-business-business-info-page .tems-div-ul{
+
+}
+.my-business-business-info-page .tems-div-ul .terms-ul-div{
+    border-radius: 6px;
+    background-color: #f9f9f9 !important;
+    padding: 20px 30px;
+    width: 100%;
+    border: 1px solid #ced4da;
+    height: 250px;
+    overflow-y: scroll;
+}
+.my-business-business-info-page  .select2-container {
+    width: 90% !important;
+
+}
+.my-business-business-info-page  .my-business-input-style{
+width: 90%; 
+}
+.my-business-business-info-page  div#collaped-location-div{
+padding-bottom: 30px;
+    border-bottom: 1px solid #e4dfdf;
+    margin-bottom: 15px;
+}
+.my-business-business-info-page  div#collaped-location-div .colaapsed-location-div-mother{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.my-business-business-info-page .company-form-section .item-upload {
+border-radius: 5px;
+    position: relative;
+    width: 200px;
+    border: 1px solid #abaaaa;
+    overflow: hidden;
+    height: 200px;
+    text-align: center;
+    margin-bottom: 15px;
+    padding-top: 118px;
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.my-business-business-info-page .company-form-section  .item-upload .profile-setting-upload-image-icon span {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: -11px;
+    bottom: 0px;
+    font-size: 130px;
+    text-align: center;
+    color: #abaaaa;
+}
+
+/*/my-business-business-info-page-styles-end*/
+/*my-business-confirmation-register-page-styles-start*/
+.my-business-confirmation-register-page{
+    padding-top: 60px;
+  padding-bottom: 60px;
+}
+.my-business-confirmation-register-page .mail-div{
+  height: 185px;
+}
+/*/my-business-confirmation-register-page-styles-end*/
+/*/my-business-business-info-page-styles-end*/
 /* ------ / Pages styles end ------ */
 /*website color start */
 .my-business-black-background-color {
@@ -872,12 +1233,19 @@ display: inline-block;
 .my-business-link-color {
   color: #535353;
 }
-.success-font-color{
-	color: #218838;
+.my-business-gray-link-color {
+  color: #707070;
 }
-/*/
-website color end*/
+.success-font-color{
+  color: #218838;
+}
+/*/website color end*/
 /* ------ util start ------ */
+.align-enter-center-with-flex{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
 .text-transform-uppercase {
   text-transform: uppercase;
 }
@@ -898,8 +1266,8 @@ website color end*/
   color: #55acee;
 }
 
-.grey-color {
-  color: #a2a2a2;
+.grey-font-color {
+  color: #707070;
 }
 
 .font-color-white {
@@ -2464,7 +2832,7 @@ website color end*/
 /*----- DISPLAY -----*/
 /* Display Block */
 .display-block {
-  display: block !important;
+  display: block ;
 }
 /* /Display Block */
 /* Display Inline */
@@ -3882,7 +4250,9 @@ website color end*/
 .float-right {
   float: right !important;
 }
-
+.float-none-class {
+  float: none !important;
+}
 .text-align-center {
   text-align: center !important;
 }
@@ -3905,6 +4275,7 @@ website color end*/
   .my-business-project-header-page .country-dropdown .dropdown-menu {
     left: -45px;
   }
+
 }
 /* ---- / media only screen and (width: 1024px) end---- */
 /* ---- media only screen and (min-width: 768px) and (max-width: 1024px) start---- */
@@ -3925,6 +4296,18 @@ website color end*/
   .my-business-project-header-page .profile-info .dropdown-menu {
     left: -125px;
   }
+    .my-business-project-footer-page .mony-pay-div {
+    text-align: center;
+}
+}
+@media only screen and (max-width: 1024px) and (min-width: 769px){
+
+.my-business-business-info-page .business-info-loction {
+    width: 90%;
+}
+.my-business-business-info-page .company-form-section .profile-setting-upload-image-div.text-center {
+    margin-top: 30px;
+}
 }
 /* ---- / media only screen and (min-width: 768px) and (max-width: 1024px) end---- */
 /* ---- media query (max-width: 768 px ) start ---- */
@@ -4227,8 +4610,8 @@ website color end*/
   .my-business-auction-form-page  .question-h4 span {
     font-size: 20px !important;
   }
-	  /*/my-business-auction-form-page-styles-end*/
-	  /*my-business-profile-setting-form-page-styles-start*/
+    /*/my-business-auction-form-page-styles-end*/
+    /*my-business-profile-setting-form-page-styles-start*/
 
   .my-business-profile-setting-form-page  .profile-settingphone-number-div .my-business-input-style {
     width: 65%;
@@ -4257,14 +4640,114 @@ website color end*/
 width: 80%;
 display: inline-block;
 
-	
+  
 }
-/*/my-business-profile-setting-form-page-styles-end*/;
+/*/my-business-profile-setting-form-page-styles-end*/
+
+/*my-business-business-info-page-styles-start*/
+.my-business-business-info-page .profile-settingphone-number-div .my-business-input-style {
+    width: 65%;
+}
+.my-business-business-info-page .profile-settingphone-number-div .select2-container {
+    width: 35% !important;
+    display: inline-block;
+}
+.my-business-business-info-page .search-box {
+    width: 12%;
+    height: 59px;
+    position: relative;
+}
+.my-business-business-info-page .social-icon-animated-div {
+    font-size: 23px;
+  }
+.my-business-business-info-page .profile-settingphone-number-div .my-business-button-style {
+    display: block;
+    margin-left: 0px;
+    margin-bottom: 7px;
+}
+.my-business-business-info-page .item-upload {
+    width: 75%;
+}
+.my-business-business-info-page .my-business-input-style {
+    width: 100%;
+}
+.my-business-business-info-page .select2-container {
+    width: 100% !important;
+}
+.my-business-business-info-page .business-info-loction .my-business-input-style {
+    width: 90%;
+}
+.my-business-business-info-page .business-info-loction .location-text-input {
+    position: absolute;
+    bottom: 30px;
+    right: 15px;
+    z-index: 3;
+    left: 15px;
+}
+.my-business-business-info-page .tab-back-button {
+    padding: 3px 17px;
+    width: 80px;
+  }
+  .my-business-business-info-page .tab-next-button {
+    padding: 3px 17px;
+    width: 80px;
+}
+.my-business-business-info-page .freelanceStep {
+    height: 11px;
+    width: 28px;
+  }
+  .my-business-business-info-page .company-form-step {
+    height: 11px;
+    width: 28px;
+  }
+.my-business-business-info-page .soical-input-type.active {
+    width: 87%;
+    left: 14%;
+}
+.my-business-business-info-page .business-info-loction {
+    height: 273px;
+  }
+  .my-business-business-info-page .business-info-loction .location-input-icon {
+    position: absolute;
+    bottom: 33px;
+    right: 28px;
+    z-index: 5;
+}
+.my-business-business-info-page .collapse-location-icon{
+  position: absolute;
+    right: 10%;
+    top: 10px;
+}
+.my-business-business-info-page .select2-container {
+    width: 100% !important;
+
+}
+.my-business-business-info-page .my-business-input-style{
+width: 100%;  
+}
+.my-business-business-info-page .social-text-span{
+  display: none;
+}
+.my-business-business-info-page .company-form-section .profile-setting-upload-image-div.text-center {
+    margin-top: 30px;
+}
+.my-business-business-info-page .company-form-section .item-upload {
+  width:75%;
+  }
+  .my-business-business-info-page .company-individual-links-classs-mother-div {
+ padding: 20px 5px;
+  width: 95%;
+    margin-bottom: 50px;
+}
+  .my-business-business-info-page .company-individual-links-classs-mother-div p {
+font-size: 16px !important;
+}
+/*/my-business-business-info-page-styles-end*/
 }
 /* ---- / media query (max-width: 768 px ) end---- */
 /* ---- media query (max-width: 500 px ) start ---- */
 @media(max-width:500px) {
-		  /*flat picker start */
+      /*flat picker start */
 .flatpickr-day.selected, .flatpickr-day.startRange, .flatpickr-day.endRange, .flatpickr-day.selected.inRange, .flatpickr-day.startRange.inRange, .flatpickr-day.endRange.inRange, .flatpickr-day.selected:focus, .flatpickr-day.startRange:focus, .flatpickr-day.endRange:focus, .flatpickr-day.selected:hover, .flatpickr-day.startRange:hover, .flatpickr-day.endRange:hover, .flatpickr-day.selected.prevMonthDay, .flatpickr-day.startRange.prevMonthDay, .flatpickr-day.endRange.prevMonthDay, .flatpickr-day.selected.nextMonthDay, .flatpickr-day.startRange.nextMonthDay, .flatpickr-day.endRange.nextMonthDay {
     background: #e60000;
     border-color: #e60000;
@@ -4291,27 +4774,7 @@ display: inline-block;
 }
 /* ---- / media query (max-width: 321 px ) end---- */
 /* ------ / Responsive media query end ------ */
- /* ---- / error span--- */
-  .span_error {
+  .error {
   color: red;
   font-size: 12px;
-}
-
- ul.myErrorClass, input.myErrorClass, textarea.myErrorClass, select.myErrorClass {
-    border-width: 1px !important;
-    border-style: solid !important;
-    border-color: #cc0000 !important;
-    background-color: #f3d8d8 !important;
-    background-image: url(http://goo.gl/GXVcmC) !important;
-    background-position: 50% 50% !important;
-    background-repeat: repeat !important;
-}
-ul.myErrorClass input {
-    color: #666 !important;
-}
-label.myErrorClass {
-    color: red;
-    font-size: 11px;
-    /*    font-style: italic;*/
-    display: block;
 }

@@ -16,10 +16,13 @@ use Intervention\Image\ImageManagerStatic as Image;
 class RegistrationTypeController extends Controller
 
 {
+  
 
 	public function Registration_personal(Request $request)
 
 	{
+    //dd($request->all());
+  
 		 $lang_id=Language::where('lang',\Lang::locale())->pluck('id')->first();
 		 $user = User::find(Auth::user()->id);
 $username=User::whereHas('memberlang', function ($query) use ($lang_id) {
@@ -37,7 +40,8 @@ $username=User::whereHas('memberlang', function ($query) use ($lang_id) {
     $path_images_larg = public_path().'/images/en/larg';
     $slug = $username->memberlang[0]->name.' '.Auth::user()->id;
     $slug = strtolower(str_replace(' ', '-', $slug));
-
+if($request->has('logo'))
+      {
     if(!file_exists( $path_images )){
       mkdir($path_images, 0777, true);
       File::makeDirectory($path_images, $mode = 0777, true, true);
@@ -61,7 +65,7 @@ $username=User::whereHas('memberlang', function ($query) use ($lang_id) {
     // Update Member Details
       /******************** have logo *******************************************************/
       
-        // raw image
+            // raw image
         $logo = $request->logo;
         $logoExt =$logo->getClientOriginalExtension();
         $logo->move($path_images_raw,$slug.'-logo.'.$logoExt);
@@ -81,10 +85,12 @@ $username=User::whereHas('memberlang', function ($query) use ($lang_id) {
           $constraint->aspectRatio();
         });
         $logo->save($path_images_larg.'/'.$slug.'-logo.'.$logoExt);
+      }
+    
       
 
 
-		  $user->Memberdetails()->update([
+		  $user->memberdetails()->update([
           'gender'=> $request->gender,
           'date_birth'=> $request->date,
           'country_id'=> $request->country,
@@ -92,7 +98,8 @@ $username=User::whereHas('memberlang', function ($query) use ($lang_id) {
           'nationality_id'=> $request->nationallity,
           'address'=> $request->adderss,
            'zip'=> $request->zip,
-           'profile_pic'=>$slug.'-logo.'.$logoExt,
+           'profile_pic'=>(isset($request->logo)) ? $slug.'-logo.'.$logoExt : NULL,
+           'jobtitle_id'=>$request->jobtitle,
       ]);
 
 

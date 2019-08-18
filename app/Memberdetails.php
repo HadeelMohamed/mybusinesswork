@@ -13,7 +13,7 @@ class Memberdetails extends Model
 
  protected $fillable = [
 
-         'user_id',
+         'user_id','jobtitle_id','gender'
 
      ];
 

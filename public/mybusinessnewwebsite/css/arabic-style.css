@@ -112,6 +112,25 @@
   margin-right: -6px;
 }
 /*/my-business-profile-setting-form-page-styles-end*/
+
+/*my-business-business-info-page-styles-start*/
+.my-business-business-info-page .tab-next-button:lang(ar){
+    float: left;
+}
+.my-business-business-info-page .tab-back-button:lang(ar){
+    float: right;
+}
+
+.my-business-business-info-page  .soical-input-type.active:lang(ar) {
+    width: 84%;
+    right: 23%;
+}
+
+.my-business-business-info-page .social-icon-animated-div.animate:lang(ar) {
+
+right:0px
+}
+/*/my-business-business-info-page-styles-end*/
 /* ------ / Pages styles end ------ */
 /* ------ Responsive media query start ------ */
 /* ---- media only screen and (width: 1024px) start---- */
@@ -202,6 +221,8 @@
 }
 /* ---- / media query (max-width: 321 px ) end---- */
 /* ------ / Responsive media query end ------ */
+ 
+ 
  /* ---- / error span--- */
   .error {
   color: red;

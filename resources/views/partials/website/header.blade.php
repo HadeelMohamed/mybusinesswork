@@ -21,12 +21,17 @@
     <meta name="author" content="my business">
     <!-- /My Business project Meta Tags -->
     <!-- My Business project Style Sheet -->
+        <link rel="stylesheet" href="{{asset('mybusinessnewwebsite/intl/build/css/intlTelInput.css')}}">
+      <link rel="stylesheet" href="{{asset('mybusinessnewwebsite/intl/build/css/demo.css')}}">
     <link rel="stylesheet" href="{{asset('mybusinessnewwebsite/css/my-business-styles.css')}}" />
 
     <link rel="stylesheet" href="{{asset('mybusinessnewwebsite/css/english-style.css')}}" />
 			@if(LaravelLocalization::getCurrentLocale() == 'ar')
 			<link rel="stylesheet" href="{{asset('mybusinessnewwebsite/css/arabic-style.css')}}" />
 			@endif
+
+  
+
 
     <!-- /My Business project Style Sheet -->
     <title>My Business project</title>

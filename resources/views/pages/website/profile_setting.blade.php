@@ -17,8 +17,15 @@ $nationalities=\App\Nationality::whereHas('nationtrans', function ($query) use (
             </div>
          </div>
          <div class="row">
+
+
+
+
+
             <!--setting-page-the-firest-of-form-section start-->
             <form class="col-xl-12 col-lg-12 col-md-12 col-sm-12   setting-page-the-firest-of-form-section " id="profilesetting" name="profilesetting" action="{{route('Registration_personal')}}" method="post" enctype="multipart/form-data">
+               
+
                  {{ csrf_field() }}  
                <div class="row  margin-top-20 ">
                   <!--form item start-->
@@ -46,7 +53,7 @@ $nationalities=\App\Nationality::whereHas('nationtrans', function ($query) use (
                         <span>Gender</span>
                         <span class="my-business-red-font-color">*</span>
                         </label>
-                        <select id="setting-profile-gender-id" class="form-control my-business-select-style my-select " name='gender'>
+                        <select id="setting-profile-gender-id" class="form-control my-business-select-style my-select changevalidation " name='gender'>
                            <option  selected></option>
                            <option value='0'>Male</option>
                            <option value='1'>Female</option>
@@ -61,7 +68,7 @@ $nationalities=\App\Nationality::whereHas('nationtrans', function ($query) use (
                         <span>Nationallity</span>
                         <span class="my-business-red-font-color">*</span>
                         </label>
-                        <select id="setting-profile-nationallity-id" class="form-control " name='nationallity'>
+                        <select id="setting-profile-nationallity-id" class="form-control changevalidation" name='nationallity'>
                             <option  selected></option>
                               @foreach($nationalities as $nationality)
                         <option value="{{ $nationality->id }}" >{{ $nationality->nationtrans[0]->name }}</option>
@@ -78,7 +85,7 @@ $nationalities=\App\Nationality::whereHas('nationtrans', function ($query) use (
                         <span>Country of residence</span>
                         <span class="my-business-red-font-color">*</span>
                         </label>
-                        <select id="setting-profile-country-id" class="form-control " name='country'>
+                        <select id="setting-profile-country-id" class="form-control changevalidation" name='country'>
                            <option  selected></option>
                                    @foreach(App\Country::all() as $country)
                         <option value="{{ $country->id }}" >{{ $country->name }}</option>
@@ -94,7 +101,7 @@ $nationalities=\App\Nationality::whereHas('nationtrans', function ($query) use (
                         <span>Job Title Category</span>
                         <span class="my-business-red-font-color">*</span>
                         </label>
-                        <select id="setting-profile-job-category-id" class="form-control " name='job-category'>
+                        <select id="setting-profile-job-category-id" class="form-control changevalidation" name='jobcategory'>
                            <option  selected></option>
                                    @foreach(\App\JobCategoryTrans::where('lang_id',$lang_id)->get() as $jobcategory)
                         <option value="{{ $jobcategory->cat_job_id }}" >{{ $jobcategory->name }}</option>
@@ -110,7 +117,7 @@ $nationalities=\App\Nationality::whereHas('nationtrans', function ($query) use (
                         <span>Job Title </span>
                         <span class="my-business-red-font-color">*</span>
                         </label>
-                        <select id="setting-profile-job-title-id" class="form-control " name='job-title'>
+                        <select id="setting-profile-job-title-id" class="form-control changevalidation" name='jobtitle'>
                            <option  selected></option>
                             
 
@@ -125,15 +132,13 @@ $nationalities=\App\Nationality::whereHas('nationtrans', function ($query) use (
                         <span>Telephone Number</span>
                         <span class="my-business-red-font-color">*</span>
                         </label>
-                        <select id="setting-profile-phone-id" class="form-control " name='code'>
-                           <option  selected></option>
-           @foreach(App\Code\returnCode::getcodes() as $key => $value)
-                        <option value="{{ $key }}" >+{{ $key }}</option>
+              
 
-               @endforeach
-                           
-                        </select>
-                        <input type="tel" class="form-control my-business-input-style " id="setting-profile-phone-id" placeholder="" name='telephone'>
+                          <input type="tel" id="phonetest" name="telephone" >
+            <span id="valid-msg" class="hide"></span>
+<span id="error-msg" class="hide"></span>
+
+<input type="hidden" name="code" id="calling_code">
                         <!-- <button class="btn  my-business-button-style hvr-pulse-shrink" id="phone-verfication-modal"  data-toggle="modal" data-target="#verfiy-phone-modal-div-id">
                         Verify
                         </button> -->
@@ -253,8 +258,8 @@ $nationalities=\App\Nationality::whereHas('nationtrans', function ($query) use (
                <h3>Do you have a new businees ?</h3>
                <!--form item start-->
                <div class="margin-auto text-center margin-top-25 margin-bottom-20">
-                  <button type="button" class="btn btn-success padding-horizontal-25 padding-vertical-5">Yes</button>
-                  <button type="button" class="btn btn-danger padding-horizontal-25 padding-vertical-5" id="proceed-modal-div-idsubmit">No</button>
+                  <a type="button" class="btn btn-success padding-horizontal-25 padding-vertical-5"  href="{{ route('full_register_page') }}">Yes</a>
+                  <a type="button" class="btn btn-danger padding-horizontal-25 padding-vertical-5" id="proceed-modal-div-idsubmit">No</a>
                </div>
                <!-- / form item end-->
             </div>
@@ -281,6 +286,8 @@ $nationalities=\App\Nationality::whereHas('nationtrans', function ($query) use (
    </div>
 </div>
 
+<script src="{{asset('mybusinessnewwebsite/intl/build/js/intlTelInput.js')}}"></script>
 
+<script src="{{asset('mybusinessnewwebsite/js/inputphonevalidation.js')}}"></script>
 <!-- / proceed modal end-->
 @include('partials.website.footer')

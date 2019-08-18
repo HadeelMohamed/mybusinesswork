@@ -32,7 +32,12 @@ Route::group(
     Route::get('/comment', function () {
     return view('pages.website.MemberProducts.comment');
 });
-Route::any('/profile_setting', 'Website\\RegistrationController@return_view_profile_setting')->name('profile_setting');
+
+    //hadeel return viw pages
+Route::any('/profile_setting', 'Website\\RegistrationController@return_view_profile_setting')->name('profile_setting')->middleware('verified');
+
+Route::any('/full_register_page', 'Website\\RegistrationController@return_view_full_register_page')->name('full_register_page');
+
 
   Route::get('/', 'Website\\PagesController@homePage')->name('home_page');
   Route::get('/Promotions','Website\\PagesController@LandingPage')->name('landingPage');
@@ -466,7 +471,7 @@ Route::group(
 
 
 
-Route::any('/profile_setting', 'Website\\RegistrationController@return_view_profile_setting')->name('profile_setting');
+
 
 Route::post('/Registration_personal', 'Website\\RegistrationTypeController@Registration_personal')->name('Registration_personal');
                     });

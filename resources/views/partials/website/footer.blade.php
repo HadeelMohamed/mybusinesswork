@@ -188,7 +188,14 @@
 <script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
 <script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
 <!-- /jquery validation-->
+<script src="{{asset('mybusinessnewwebsite/intl/build/js/prism.js')}}"></script>
+
+
+
+
 <!-- custome js file  -->
 <script src="{{asset('mybusinessnewwebsite/js/min.js')}}"></script>
+
+<script src="{{asset('mybusinessnewwebsite/js/programming.js')}}"></script>
 </body>
 </html>

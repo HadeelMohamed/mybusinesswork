@@ -18,12 +18,14 @@ class RegistrationController extends Controller
 {
 
 
-   public function return_view_profile_setting()
-   {
 
-  
+
+   public function return_view_profile_setting()
+{
+
        return view('pages.website.profile_setting');
-   }
+}
+   
 
 	        public function store(Request $request)
     {
@@ -50,10 +52,19 @@ $slug=preg_replace('/\s+/', '-', strtolower($request->firstname));
 $user->memberlang()->create(['lang_id' =>$lang_id,'member_id'=> $userdetails->id,'name'=>$request->firstname,'slug'=>$slug]);
       auth()->login($user);
 
+  
+
 return redirect()->route('profile_setting');
            
 
     }
+
+///////////////return to full register page
+       public function return_view_full_register_page()
+{
+
+       return view('pages.website.full-register-page');
+}
 
 
 }
