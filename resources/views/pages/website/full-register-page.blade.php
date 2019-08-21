@@ -58,7 +58,7 @@
                         <!--/ frist-form-info-quest-form-section end-->
                         <!--individual-form-section start-->
                         <form class="col-xl-12 col-lg-12 col-md-12 col-sm-12 individual-form-section padding-horizontal-0" id="free-lancer-form-id" name="free-lancer-form-id" style="display: none">
-                            <div class="row  margin-top-20 ">
+                            <div class="row  margin-top-20 " id="rootwizard">
                                 <!--form tab item div start-->
                                 <div class="freelance-tab col-xl-12 col-lg-12 col-md-12 col-sm-12">
                                     <div class=" row">
@@ -79,13 +79,13 @@
                                                 <label for="business-info-business-name-id" class="business-info-form-label">
                                                     <span>Business name</span>
                                                 </label>
-                                                <input type="text" class="form-control my-business-input-style " id="business-info-business-name-id" placeholder="" name='business_name'>
+                                                <input type="text" class="form-control my-business-input-style " id="business-info-business-name-id" placeholder="" name='business_name' required>
                                             </div>
                                             <!-- / form item end-->
                                             <!--form item start-->
                                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 form-group margin-top-20">
                                                 <label class="form-check-label ">
-                                                    <input type="checkbox" class="form-check-input option-input margin-left-5 margin-right-5" value="">
+                                                    <input type="checkbox" class="form-check-input option-input margin-left-5 margin-right-5" value="" name='profilecheck' >
                                                     <span class="check-lable-span">
                               Use my profile name
                               </span>
@@ -98,7 +98,7 @@
                                                     <span>Business Category</span>
                                                     <span class="my-business-red-font-color">*</span>
                                                 </label>
-                                                <select id="business-info-business-category-id" class="form-control" name='business_category'>
+                                                <select id="business-info-business-category-id" class="form-control" name='business_category' required>
                                                     <option selected>Choose your business category</option>
                                                    
                                                 </select>
@@ -114,8 +114,8 @@
                                                 <label for="freelance-logo-btn" class="profile-setting-upload-image-icon" id="freelance-logo-upload-label-for-image">
                                                     <span><i class="far fa-image"></i></span>
                                                 </label>
-                                                <input id="freelance-logo-btn" type="file" style="display:none;" name="free_logo" onchange="freeGetFileSize()">
-                                                <img id="freelance-logo-preview" src="" width="100%" class="auction-upload-image-photo-place">
+                                                <input id="freelance-logo-btn" type="file" style="visibility: hidden;"  class="size" name='free_logo' onchange="freeGetFileSize()"  >
+                                                <img id="freelance-logo-preview" src="" width="100%" class="auction-upload-image-photo-place" >
                                                 <a href="#" class=" grey-font-color display-block " id="freelance-upload-logo">Upload your logo</a>
                                                 <span class=" grey-font-color display-block" id="freelance-upload-or">or</span>
                                                 <a href="#" class="grey-font-color display-block " id="freelance-upload-use-pic">Use your profile picture</a>
@@ -146,17 +146,16 @@
                                                     <span>Telephone Number</span>
                                                     <span class="my-business-red-font-color">*</span>
                                                 </label>
-                                                <select id="setting-profile-phone-id" class="form-control selec-two-class">
-                                                    <option selected>+020</option>
-                                                    <option>+020</option>
-                                                    <option>+020</option>
-                                                    <option>+020</option>
-                                                </select>
-                                                <input type="tel" class="form-control my-business-input-style " id="business-info-company-phone-id" placeholder="">
+                                                       <input type="tel" id="phonetest" name="telephone"  class="telehonecheck">
+<!--             <span id="valid-msg" class="hide"></span>
+<span id="error-msg" class="hide"></span> -->
+
+<input type="hidden" name="code" id="calling_code">
+                                               <!--  <input type="tel" class="form-control my-business-input-style " id="business-info-company-phone-id" placeholder=""> -->
                                                 <span class="my-business-red-font-color font-18   padding-horizontal-0-inresponsive  display-block ">* Phone numbers are only need for verification</span>
-                                                <button class="btn  my-business-button-style hvr-pulse-shrink" id="business-info-company-phone-verfication-modal" data-toggle="modal" data-target="#freelance-verfiy-phone-modal-div-id" type="button">
+                                               <!--  <button class="btn  my-business-button-style hvr-pulse-shrink" id="business-info-company-phone-verfication-modal" data-toggle="modal" data-target="#freelance-verfiy-phone-modal-div-id" type="button">
                                                     Verify
-                                                </button>
+                                                </button> -->
                                             </div>
                                             <!-- / form item end-->
                                             <!--form item start-->
@@ -174,7 +173,7 @@
                                                 <label for="business-info-business-email-id" class="business-info-form-label">
                                                     <span>Email Address</span>
                                                 </label>
-                                                <input type="email" class="form-control my-business-input-style " id="business-info-business-email-id" placeholder="" name='business_email'>
+                                                <input type="email" class="form-control my-business-input-style email " id="business-info-business-email-id" placeholder="" name='business_email' required>
                                             </div>
                                             <!-- / form item end-->
                                         </div>
@@ -212,7 +211,7 @@
                                                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12  social-inkes-div position-relative">
                                                     <div class="wrapper margin-top-5 position-relative">
                                                         <div class="search-box">
-                                                            <div class="social-icon-animated-div" id="free-face-so-btn-id">
+                                                            <div class="social-icon-animated-div" id="inst-face-so-btn-id">
                                                                 <span class="social-icon-span"><i class="fab fa-instagram"></i></span>
                                                                 <span class="social-text-span">Instgram</span>
                                                             </div>
@@ -225,7 +224,7 @@
                                                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 social-inkes-div position-relative">
                                                     <div class="wrapper margin-top-5 position-relative">
                                                         <div class="search-box">
-                                                            <div class="social-icon-animated-div" id="free-face-so-btn-id">
+                                                            <div class="social-icon-animated-div" id="link-face-so-btn-id">
                                                                 <span class="social-icon-span"><i class="fab fa-linkedin"></i> </span>
                                                                 <span class="social-text-span">linkedin</span>
                                                             </div>
@@ -238,7 +237,7 @@
                                                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12  social-inkes-div position-relative">
                                                     <div class="wrapper margin-top-5 position-relative">
                                                         <div class="search-box">
-                                                            <div class="social-icon-animated-div" id="free-face-so-btn-id">
+                                                            <div class="social-icon-animated-div" id="beh-face-so-btn-id">
                                                                 <span class="social-icon-span"><i class="fab fa-behance-square"></i></span>
                                                                 <span class="social-text-span">Behance</span>
                                                             </div>
@@ -288,11 +287,9 @@
                                                     <span>Country</span>
                                                     <span class="my-business-red-font-color">*</span>
                                                 </label>
-                                                <select id="freelance-business-info-country-id" class="form-control selec-two-class">
-                                                    <option selected>Choose your country</option>
-                                                    <option>Country</option>
-                                                    <option>Country</option>
-                                                    <option>Country</option>
+                                                <select id="freelance-business-info-country-id" class="form-control " required name='business_country'>
+                                           <option selected>Choose your business category</option>
+                                                    
                                                 </select>
                                             </div>
                                             <!-- / form item end-->
@@ -302,11 +299,9 @@
                                                     <span>City</span>
                                                     <span class="my-business-red-font-color">*</span>
                                                 </label>
-                                                <select id="freelance-business-info-city-id" class="form-control selec-two-class">
-                                                    <option selected>Choose your city</option>
-                                                    <option>City</option>
-                                                    <option>City</option>
-                                                    <option>City</option>
+                                                <select id="freelance-business-info-city-id" class="form-control requiredfiled" name='business_city' >
+                                                   <option selected>Choose your business category</option>
+                                                   
                                                 </select>
                                             </div>
                                             <!-- / form item end-->
@@ -316,7 +311,7 @@
                                                     <span>Street</span>
                                                     <span class="my-business-red-font-color">*</span>
                                                 </label>
-                                                <input type="text" class="form-control my-business-input-style " id="freelance-business-info-street-id" placeholder="">
+                                                <input type="text" class="form-control my-business-input-style requiredfiled " id="freelance-business-info-street-id" name='business_street' >
                                             </div>
                                             <!-- / form item end-->
                                             <!--form item start-->
@@ -324,7 +319,7 @@
                                                 <label for="freelance-business-info-zib-code-id" class="business-info-form-label">
                                                     <span>ZIB Code</span>
                                                 </label>
-                                                <input type="text" class="form-control my-business-input-style " id="freelance-business-info-zib-code-id" placeholder="">
+                                                <input type="text" class="form-control my-business-input-style zipcode " id="freelance-business-info-zib-code-id" placeholder="">
                                             </div>
                                             <!-- / form item end-->
 
@@ -344,7 +339,7 @@
                                             <!--form item start-->
                                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 form-group margin-top-10 padding-horizontal-0">
                                                 <label class="form-check-label ">
-                                                    <input type="checkbox" class="form-check-input option-input margin-left-5 margin-right-5" value="">
+                                                    <input type="checkbox" class="form-check-input option-input margin-left-5 margin-right-5" value="" >
                                                     <span class="check-lable-span">
                            I am online only
                            </span>
@@ -399,7 +394,7 @@
                                         <!--form item start-->
                                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 form-group ">
                                             <label class="form-check-label ">
-                                                <input type="checkbox" class="form-check-input option-input margin-left-5 margin-right-5" value="">
+                                                <input type="checkbox" class="form-check-input option-input margin-left-5 margin-right-5 " value="" required  name='termscheck'>
                                                 <span class="check-lable-span">
                            I agree to the terms and conditions
                            </span>
@@ -856,7 +851,7 @@
                                                 <label for="company-business-info-zib-code-id" class="business-info-form-label">
                                                     <span>ZIB Code</span>
                                                 </label>
-                                                <input type="text" class="form-control my-business-input-style " id="company-business-info-zib-code-id" placeholder="">
+                                                <input type="text" class="form-control my-business-input-style  " id="company-business-info-zib-code-id" placeholder="">
                                             </div>
                                             <!-- / form item end-->
 
@@ -969,7 +964,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <img class="modal-title" id="" src="../img/Trans5.png" width="150px" height="auto" />
+                    <img class="modal-title" id="" src="{{asset('mybusinessnewwebsite/img/Trans5.png')}}" width="150px" height="auto" />
                 </div>
                 <div class="modal-body">
                     <!--form item start-->
@@ -1026,7 +1021,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <img class="modal-title" id="" src="../img/Trans5.png" width="150px" height="auto" />
+                    <img class="modal-title" id="" src="{{asset('mybusinessnewwebsite/img/Trans5.png')}}" width="150px" height="auto" />
                 </div>
                 <div class="modal-body">
                     <!--form item start-->
@@ -1078,5 +1073,8 @@
         </div>
     </div>
     <!-- /freelance verivaction modal sucess modal end-->
+<script src="{{asset('mybusinessnewwebsite/intl/build/js/intlTelInput.js')}}"></script>
+
+<script src="{{asset('mybusinessnewwebsite/js/inputphonevalidation.js')}}"></script>
 
 @include('partials.website.footer')

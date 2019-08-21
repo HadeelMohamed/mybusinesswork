@@ -48,4 +48,34 @@ $lang_id=\App\Language::where('lang',\Lang::locale())->pluck('id')->first();
     } 
 
   }
+
+
+    public function CheckSecondEMail( Request $request){
+
+
+
+
+
+        $user =   DB::table('users')->where('email',$request->business_email)->count();
+
+ $user2 = DB::table('member_details')->WhereNotNull('member_details.alternative_email')
+ ->Where('member_details.alternative_email' , $request->business_email)->count();
+        
+
+
+
+
+      if($user <= 0 && $user2 <= 0)
+      {
+          return \Response::json('true');
+
+
+      }
+      else
+      {
+          return \Response::json('This email alread existed');
+
+      }
+
+  }
 }

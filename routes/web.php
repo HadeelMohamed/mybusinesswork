@@ -453,6 +453,9 @@ Route::get ( '/redirect/{service}', 'Website\\SocialAuthController@redirect' );
 Route::get ( '/callback/{service}', 'Website\\SocialAuthController@callback' );
 
 Route::post ('checkEmailUser', 'Website\\AjaxController@checkEmailUser' )->name('checkEmailUser');
+
+Route::post ('CheckSecondEMail', 'Website\\AjaxController@CheckSecondEMail')->name('CheckSecondEMail');
+
 Route::post ('getjobtitle', 'Website\\AjaxController@getjobtitle' )->name('getjobtitle');
 
 

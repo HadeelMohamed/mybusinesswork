@@ -248,6 +248,7 @@ $("#company-face-so-btn-id").click(function(){
 
 //free lancer social linkes anmated
 $("#free-face-so-btn-id").click(function(){
+
   $(".soical-input-type").toggleClass("active").focus;
   $(this).toggleClass("animate");
   $(".soical-input-type").val("");
@@ -294,66 +295,100 @@ function freeShowtab(n) {
   freeFixStepIndicator(n)
 }
 
+
+
+
+
+
 function freeNextPrev(n) {
 
-  $.validator.addMethod('filesize', function (value, element, param) {
+
+  
+
+
+
+ 
+
+jQuery.validator.addMethod("zipcode", function(value, element) {
+  return this.optional(element) || /^\d{5}(?:-\d{4})?$/.test(value);
+}, "Please provide a valid zipcode.");
+
+$.validator.addMethod('filesize', function (value, element, param) {
+  console.log('l');
     return this.optional(element) || (element.files[0].size <= param)
 }, 'File size must be less than {0}');
 
-  $("#free-lancer-form-id").validate({
-      ignore: [],    
-       
-  rules: {
+$.validator.addMethod('telehonevaild', function (value, element, param) {
 
-       business_name:
-    {
-    
-    required:true,
+    return iti.isValidNumber();
+}, 'Please enter vaild number');
 
-    },
+$.validator.addMethod(
+     "newEmail", //name of a virtual validator
+     $.validator.methods.email, //use the actual email validator
+     "Please enter valid email"
+);
 
-      business_category:
-    {
-    
-    required:true,
+//Now you can use the addClassRules and give a custom error message as well.
+$.validator.addClassRules(
+   "email", //your class name
+   { newEmail: true,
 
-    },
-      business_email:
-    {
-    
-    required:true,
-
-    },
- 
-     free_logo: {
-            
-                accept: "jpg,jpeg,png",
-                filesize: 1000*1024,
-            },
+      remote: {
+          url: "/CheckSecondEMail",
+            headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+          type: "post"
+         },
+    }
+ );
 
 
- 
-    
-  },
-  messages: {
-         free_logo: {
-      filesize:"file size must be less than 2M",
+$.validator.addClassRules(
+   "requiredfiled", //your class name
+   { required: true,
+
       
-},
-  }
+    }
+ );
 
+$.validator.addClassRules(
+   "telehonecheck", //your class name
+   {
+     required:true,
+     telehonevaild: true,
+
+      
+    }
+ );
+ $.validator.addClassRules("size", {  required: true, accept: "jpg,jpeg,png",
+                filesize: 1000*1024, });
+
+
+
+
+
+    $("#free-lancer-form-id").validate({
+
+      
+    });
+ 
+ jQuery.validator.setDefaults({
+   ignore: [],
+       onkeyup: false,
+
+  success: "valid",
+   debug: true,
+   
 });
 
-  if ($("#free-lancer-form-id").valid()) {
-    document.getElementsByClassName("freelanceStep")[freeCurrenttab].className += " freelanceFinish";
-  }
- var form = $(this).closest("form");
-    var validator = form.data("validator");
-    var section = $(this).closest("div");
-    var fields = section.find(":input");
-  console.log($("#free-lancer-form-id").valid(),$("#free-lancer-form-id").validate().form(),fields.valid());
+
+
+
+alert($("#free-lancer-form-id").validate().form());
   var x = document.getElementsByClassName("freelance-tab");
-  if (n == 1 && !fields.valid()) return false;
+  if (n == 1 && !$("#free-lancer-form-id").validate().form()) return false;
   x[freeCurrenttab].style.display = "none";
   freeCurrenttab = freeCurrenttab + n;
   if (freeCurrenttab >= x.length) {
@@ -365,12 +400,28 @@ function freeNextPrev(n) {
 }
 
 function freeValidateform() {
-    // var valid = true;
- 
-//console.log($("#free-lancer-form-id").valid(),'l');
- //return $("#free-lancer-form-id").valid(); 
-}
 
+  var x, y, i, valid = true;
+  x = document.getElementsByClassName("freelance-tab");
+  y = x[freeCurrenttab].getElementsByClassName("form-group");
+
+  for (i = 0; i < y.length; i++) {
+  
+    if (y[i].value == "") {
+
+      y[i].className += " invalid";
+ 
+      valid = false;
+    }
+  }
+
+  if (valid) {
+    document.getElementsByClassName("freelanceStep")[freeCurrenttab].className += " freelanceFinish";
+  }
+
+  alert(valid);
+  return valid; 
+}
 function freeFixStepIndicator(n) {
   var i, x = document.getElementsByClassName("freelanceStep");
   for (i = 0; i < x.length; i++) {
@@ -482,12 +533,12 @@ function freeGetFileSize() {
 
       var fsize = fi.files.item(i).size;
 
-      // if (fsize > 2097152) {
+     // if (fsize > 2097152) {
 
-      //   alert('image size > 2M');
-      //   $('#freelance-logo-preview').empty();
-      //   $('#freelance-logo-btn').val('');
-      // }
+       // alert('image size > 2M');
+       // $('#freelance-logo-preview').empty();
+       // $('#freelance-logo-btn').val('');
+     // }
 
     }
   }
@@ -606,3 +657,5 @@ $("#company-logo-btn").change(function () {
   });
 
 });
+
+

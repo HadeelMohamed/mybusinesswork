@@ -259,6 +259,14 @@ $("#business-info-business-category-id").select2({
     placeholder: "Select your job title"
     });
 
+$("#freelance-business-info-country-id").select2({
+    placeholder: "Select your  country"
+    });
+
+$("#freelance-business-info-city-id").select2({
+    placeholder: "Select your  country"
+    });
+
 $.validator.addMethod('filesize', function (value, element, param) {
     return this.optional(element) || (element.files[0].size <= param)
 }, 'File size must be less than {0}');
@@ -361,7 +369,8 @@ $(document).ready(function(){
               headers: {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         },
-                type:'POST',
+             
+              type:'POST',
                 url:'/getjobtitle',
                 data:'jobcategoryID='+jobcategoryID,
                 success:function(html){
@@ -372,6 +381,8 @@ $(document).ready(function(){
                 }
             }); 
         }
+
+        
      
     });
 
@@ -388,10 +399,7 @@ $(document).ready(function(){
 
     });
 
-  $(document).ready(function() {
 
-
-
-
- });
-
+ 
+  
+  

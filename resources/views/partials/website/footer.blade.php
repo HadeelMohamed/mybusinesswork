@@ -185,12 +185,14 @@
 
 <!-- /my-business-project project Libraries -->
 <script src="{{asset('mybusinessnewwebsite/js/jquery.validate.js')}}"></script>
-<script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
-<script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
+<script src="{{asset('mybusinessnewwebsite/js/jquery.validate.min.js')}}"></script>
+<script src="{{asset('mybusinessnewwebsite/js/additional-methods.js')}}"></script>
+<script src="{{asset('mybusinessnewwebsite/js/additional-methods.min.js')}}"></script>
 <!-- /jquery validation-->
-<script src="{{asset('mybusinessnewwebsite/intl/build/js/prism.js')}}"></script>
 
 
+
+<script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
 
 
 <!-- custome js file  -->
